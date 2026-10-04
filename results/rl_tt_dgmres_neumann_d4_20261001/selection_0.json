@@ -1,0 +1,30 @@
+{
+  "model": "controller_iteration_0.pt",
+  "gate": {
+    "min_gain": 0.002,
+    "uncertainty_scale": 0.5,
+    "max_failure_increase": 0.05,
+    "max_failure_probability": 0.25,
+    "min_action_samples": 3,
+    "max_standardized_feature": 8.0,
+    "decision_overhead_fraction": 0.0
+  },
+  "baselines": {
+    "global": 8,
+    "by_dimension": {
+      "4": 8
+    },
+    "validation_sha256": "c58b99e470ecb091e05f0fa1946e33d33086d1b927af384a6223f0f1b944f2d1"
+  },
+  "iteration": 0,
+  "gate_index": 1,
+  "model_sha256": "b087394a6ebfcc8d1fd4617e82f552041571bb8f543fa9b8d497c278a8e86eb3",
+  "score": [
+    2,
+    -90.1145143
+  ],
+  "validation_file_sha256": {
+    "validation_0\\validation_d4_0001_g1.json": "f76350aac4892742207f7f85d9da9761fa9ed8139466f9d4a2baf1b300942c67",
+    "validation_0\\validation_d4_0000_g1.json": "7d3d26fa17ab3afa445eb90b5b2cef92fe4e46c12410a2ec44cd6570f6a66c0f"
+  }
+}

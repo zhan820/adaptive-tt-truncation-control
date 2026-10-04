@@ -1,0 +1,28 @@
+name: Windows numerical tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  numerical-tests:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+          cache: pip
+          cache-dependency-path: rl_tt_dgmres_v2/requirements.txt
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest rl_tt_dgmres_neumann/tests rl_tt_dgmres_v3/tests test_run_trained_neumann.py --import-mode=importlib -q
+        env:
+          PYTEST_DISABLE_PLUGIN_AUTOLOAD: '1'
+          PYTHONIOENCODING: utf-8
+      - run: New-Item -ItemType Directory -Force deployment | Out-Null
+      - run: python audit_rl_tt_dgmres_neumann.py --output results/rl_tt_dgmres_neumann_d4_20261001 --report deployment/audit_ci.json
+      - run: python train_neumann.py prepare --output deployment/prepare_smoke --train-dims 4 --paper-dims 4 --train-count 1 --validation-count 1 --test-count 1 --max-states 1 --repeats 1 --seconds-budget 75 --paper-seconds 75 --max-tt-rank 256 --recovery-max-rank 256 --diagnostic-max-rank 512 --threads 4

@@ -1,0 +1,40 @@
+{
+  "audit_passed": true,
+  "requested_stage": "trained",
+  "manifest_stage": "fixed_selected",
+  "partial_training_audit": true,
+  "effectiveness_evaluated": false,
+  "output": "D:\\张量tt格式下的dgmres算法\\results\\rl_tt_dgmres_neumann_d4_20261001",
+  "manifest_sha256": "af6740ab90604b25484a1bac104adb2b64fb3e46d9f9031b54d79d0908ad2bc7",
+  "prepared_contract_sha256": "a49c4dc90bcdebbd0daac3fae21f7d3ed37f8f6abd5e68d1be32712278f72223",
+  "auditor_sha256": "1faed01d7a35e5cb3ac08a6a6ca2894c84c3a6e96911ded30a67cf7fe2f4a356",
+  "baseline": {
+    "global": 8,
+    "by_dimension": {
+      "4": 8
+    },
+    "validation_sha256": "c58b99e470ecb091e05f0fa1946e33d33086d1b927af384a6223f0f1b944f2d1"
+  },
+  "fitted_iterations": {
+    "0": {
+      "rows": 108,
+      "states": 12,
+      "successes": 108,
+      "problems_with_branch_labels": 6,
+      "model_sha256": "b087394a6ebfcc8d1fd4617e82f552041571bb8f543fa9b8d497c278a8e86eb3",
+      "fit_seconds": 12.110750999999999
+    }
+  },
+  "frozen_selection_verified": false,
+  "limitations": [
+    "Hash-linked evidence consistency, not a cryptographic external timestamp or proof of historical execution.",
+    "Models and tensor checkpoints are hash-checked without unpickling or executing them.",
+    "Saved independent float64 acceptance is checked; residual tensors are not recomputed.",
+    "Training and test share operators; only new RHS instances are held out.",
+    "Known paper seed cases are descriptive showcases, excluded from held-out claims.",
+    "An observed fixed-versus-RL gain alone does not establish cycle-by-cycle adaptation benefit; rl_static is a separate comparator.",
+    "Gate disagreement and failure penalties are not convergence or universal acceleration proofs."
+  ],
+  "effectiveness_claim": "Not evaluated: this stage never opens test or paper result files.",
+  "checked_raw_summaries": 132
+}

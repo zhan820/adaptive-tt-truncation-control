@@ -1,0 +1,81 @@
+{
+  "4": {
+    "fixed": {
+      "runs": 12,
+      "successes": 12,
+      "instances": 4,
+      "successful_instances_all_repeats": 4,
+      "median_success_seconds": 51.281266349999996,
+      "median_success_iterations": 187.5,
+      "status_counts": {
+        "eta_target": 12
+      },
+      "recoveries": 0,
+      "shield_interventions": 66,
+      "executed_action_counts": {
+        "8": 24,
+        "7": 36,
+        "6": 30
+      }
+    },
+    "fixed_by_dimension": {
+      "runs": 12,
+      "successes": 12,
+      "instances": 4,
+      "successful_instances_all_repeats": 4,
+      "median_success_seconds": 49.48177529999985,
+      "median_success_iterations": 187.5,
+      "status_counts": {
+        "eta_target": 12
+      },
+      "recoveries": 0,
+      "shield_interventions": 66,
+      "executed_action_counts": {
+        "8": 24,
+        "7": 36,
+        "6": 30
+      }
+    },
+    "rl": {
+      "runs": 12,
+      "successes": 12,
+      "instances": 4,
+      "successful_instances_all_repeats": 4,
+      "median_success_seconds": 48.64458430000001,
+      "median_success_iterations": 193.5,
+      "status_counts": {
+        "eta_target": 12
+      },
+      "recoveries": 0,
+      "shield_interventions": 53,
+      "executed_action_counts": {
+        "0": 51,
+        "1": 3,
+        "7": 27,
+        "6": 45,
+        "4": 3,
+        "8": 3
+      }
+    },
+    "rl_static": {
+      "runs": 12,
+      "successes": 6,
+      "instances": 4,
+      "successful_instances_all_repeats": 2,
+      "median_success_seconds": 45.580110700000034,
+      "median_success_iterations": 175.0,
+      "status_counts": {
+        "iteration_limit": 6,
+        "eta_target": 6
+      },
+      "recoveries": 0,
+      "shield_interventions": 21,
+      "executed_action_counts": {
+        "0": 204,
+        "7": 24,
+        "6": 12,
+        "8": 6
+      }
+    }
+  }
+}

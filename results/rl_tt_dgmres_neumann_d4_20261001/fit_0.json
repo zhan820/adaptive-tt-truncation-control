@@ -1,0 +1,53 @@
+{
+  "result": {
+    "fit_call": 1,
+    "target_policy": "baseline",
+    "rows": 108,
+    "input_dim": 32,
+    "bootstrap_groups": 12,
+    "bootstrap_unit": "state/snapshot when supplied, otherwise features",
+    "epochs": 400,
+    "warm_start": false,
+    "scaler_refitted": true,
+    "source_data": [
+      "D:\\张量tt格式下的dgmres算法\\results\\rl_tt_dgmres_neumann_d4_20261001\\rollouts_0\\rows.json"
+    ],
+    "training_rows_sha256": "c317d293154ac543f32d325504192385c949144a0cc55007c83a2f16b3e1743f",
+    "action_counts": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "members": [
+      {
+        "member": 0,
+        "updates": 800,
+        "loss_last": 0.008121770806610584,
+        "bootstrap_rows": 108
+      },
+      {
+        "member": 1,
+        "updates": 800,
+        "loss_last": 0.0034765920136123896,
+        "bootstrap_rows": 108
+      },
+      {
+        "member": 2,
+        "updates": 800,
+        "loss_last": 0.0005870888708159328,
+        "bootstrap_rows": 108
+      }
+    ],
+    "failure_count": 0,
+    "successful_action_pairs": 432
+  },
+  "seconds": 12.110750999999999,
+  "target_policy": "baseline",
+  "model_sha256": "b087394a6ebfcc8d1fd4617e82f552041571bb8f543fa9b8d497c278a8e86eb3"
+}

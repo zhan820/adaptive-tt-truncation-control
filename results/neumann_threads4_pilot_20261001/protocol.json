@@ -1,0 +1,55 @@
+{
+  "role": "development_only_not_heldout",
+  "config": {
+    "max_iterations": 300,
+    "tolerance": 1e-07,
+    "fixed_round_tolerance": 1e-10,
+    "diagnostic_tolerance": 1e-12,
+    "range_tolerance": 1e-09,
+    "max_tt_rank": 256,
+    "recovery_max_tt_rank": 256,
+    "diagnostic_max_rank": 512,
+    "seconds_budget": 120.0,
+    "failure_penalty": 5.0,
+    "max_recoveries": 3,
+    "reorthogonalization": "selective",
+    "orth_error_mode": "arnoldi_budget",
+    "rounding_audit": "tail",
+    "safety_filter": true,
+    "growth_limit": 1.5,
+    "projected_check_factor": 10.0,
+    "direct_breakdown_correction": true
+  },
+  "specs": [
+    {
+      "name": "pilot_n12_d4",
+      "n": 12,
+      "dims": 4,
+      "seed": 2026104227,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    },
+    {
+      "name": "pilot_n12_d5",
+      "n": 12,
+      "dims": 5,
+      "seed": 2026105236,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    }
+  ],
+  "actions": [
+    7
+  ],
+  "threads": 4,
+  "paper_seed_excluded": true,
+  "no_training_or_test_selection_claim": true
+}

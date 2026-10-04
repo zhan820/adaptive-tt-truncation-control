@@ -1,0 +1,130 @@
+\Needspace{5\baselineskip}
+\section{测试问题与评价方法}\label{sec:exp-setup}
+
+\subsection{奇异张量积系统的构造}
+
+取每个方向的网格点数 $n=12$，张量阶数为 $d$，总未知量个数为 $N=n^d$。令 $h=1/(n-1)$，一维离散矩阵为
+\begin{equation}\label{eq:exp-L}
+ L=h^{-2}\operatorname{tridiag}\bigl(-1,(1,2,\ldots,2,1),-1\bigr)
+ \in\R^{n\times n}.
+\end{equation}
+它满足 $L\mathbf1=0$，特征值为 $\ell_q=2h^{-2}(1-\cos(q\pi/n))$，$q=0,\ldots,n-1$。相应余弦基为 $\phi_0(i)=n^{-1/2}$，以及
+\[
+ \phi_q(i)=\sqrt{2/n}\cos\bigl(q\pi(i+1/2)/n\bigr),
+ \qquad i=0,\ldots,n-1,\quad q\ge1.
+\]
+记 $\ell_{\max}=\ell_{n-1}$。本章使用归一化 Kronecker 和
+\begin{equation}\label{eq:exp-A}
+ A=\frac1{d\ell_{\max}}\sum_{\mu=1}^d
+ I^{\otimes(\mu-1)}\otimes L\otimes I^{\otimes(d-\mu)}.
+\end{equation}
+因此 $A=A^*\succeq0$，$\ind(A)=1$，且
+\begin{equation}\label{eq:exp-range}
+ q_0=n^{-d/2}\mathbf1,\qquad
+ \cN(A)=\spanop\{q_0\},\qquad
+ \cR(A)=q_0^\perp,\qquad \norm A=\norm{A^2}=1.
+\end{equation}
+在稳定值域上，最小正特征值和条件数为
+\begin{equation}\label{eq:exp-range-cond}
+ \lambda_{\min}^+=\frac{\ell_1}{d\ell_{\max}},\qquad
+ \kappa_{\cR}(A)=\frac1{\lambda_{\min}^+}
+ =d\frac{1+\cos(\pi/n)}{1-\cos(\pi/n)}.
+\end{equation}
+表~\ref{tab:exp-size} 给出不同规模的谱参数：$N$ 随 $d$ 指数增长，稳定值域条件数随 $d$ 线性增长。
+
+\begin{table}[H]
+\centering\small
+\caption{测试系统的规模与稳定值域条件数}\label{tab:exp-size}
+\begin{tabular}{rrrr}
+\toprule
+$d$ & $N=12^d$ & $\lambda_{\min}^+$ & $\kappa_{\cR}(A)$\\
+\midrule
+4&20\,736&$4.3331\times10^{-3}$&230.78\\
+5&248\,832&$3.4665\times10^{-3}$&288.48\\
+6&2\,985\,984&$2.8887\times10^{-3}$&346.17\\
+10&61\,917\,364\,224&$1.7332\times10^{-3}$&576.95\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+参考解由三个 CP 项构造。取标准正态随机数 $\xi_{jq}^{(\mu)}$，定义
+\[
+ \widehat u_j^{(\mu)}=\sum_{q=0}^{n-1}\frac{\xi_{jq}^{(\mu)}}{(1+q)^2}\phi_q,
+ \quad u_j^{(\mu)}=\widehat u_j^{(\mu)}/\norm{\widehat u_j^{(\mu)}},\quad j=0,1,2.
+\]
+由此形成
+\begin{equation}\label{eq:exp-reference}
+ \widehat x=\sum_{j=0}^2 2^{-j}\bigotimes_{\mu=1}^d u_j^{(\mu)},\quad
+ \bar x=(I-q_0q_0^*)\widehat x,\quad x_\star=\bar x/\norm{\bar x}.
+\end{equation}
+右端项取为
+\begin{equation}\label{eq:exp-rhs}
+ b_c=Ax_\star,\qquad b=b_c+0.1\norm{b_c}q_0
+\end{equation}
+忽略数据构造误差时，$A^Db=x_\star$，而 $Ax=b$ 不相容。对任意 $x$，有
+\[
+ \norm{b-Ax}^2
+ =\norm{b_c-Ax}^2+0.01\norm{b_c}^2,
+ \qquad
+ \frac{\norm{b-Ax}}{\norm b}\ge\frac{0.1}{\sqrt{1.01}}
+ \approx9.9504\times10^{-2}.
+\]
+因此采用变换残差 $A(b-Ax)$ 评价迭代。实际数据含 TT 截断误差，故下文以制造参考解 $x_\star$ 评价前向误差。
+
+\Needspace{5\baselineskip}
+\subsection{误差、存储与计时指标}
+
+对实际保存的迭代解 $\widetilde x_k$，本章采用的变换后向误差为
+\begin{equation}\label{eq:exp-eta}
+ \eta_1(\widetilde x_k)
+ =\frac{\norm{A(b-A\widetilde x_k)}}
+ {\norm{A^2}\norm{\widetilde x_k}+\norm{Ab}}
+ =\frac{\norm{A(b-A\widetilde x_k)}}
+ {\norm{\widetilde x_k}+\norm{Ab}}.
+\end{equation}
+常规收敛目标为 $\eta_1\le10^{-7}$；图~\ref{fig:exp1} 使用 $10^{-8}$，图~\ref{fig:exp8} 使用 $10^{-5}$。图~\ref{fig:exp2} 专门观察误差演化，达到目标后仍运行至预算结束。另记录
+\begin{equation}\label{eq:exp-other-errors}
+ \widehat\rho_{\rm true,k}
+ =\frac{\norm{A(b-A\widetilde x_k)}}{\norm{Ab}},\qquad
+ \widehat\rho_{\rm proj,k}=\frac{\rho_{\rm proj,k}}{\norm{Ab}},\qquad
+ E_k=\frac{\norm{\widetilde x_k-x_\star}}{\norm{x_\star}}.
+\end{equation}
+其中 $\rho_{\rm proj,k}$ 为投影残差范数。真实变换残差由原始 $A,b$ 与当前解独立重算，检查时不附加 TT 截断。
+
+TT 向量 $v$ 的实际核存储量定义为
+\begin{equation}\label{eq:exp-storage}
+ s_{\TT}(v)=\sum_{\mu=1}^d r_{\mu-1}nr_\mu,
+ \qquad
+ \gamma_{\rm last}=\frac{s_{\TT}(v_q)}N,\qquad
+ \gamma_{\rm active}=\frac{\sum_{j=1}^q s_{\TT}(v_j)}{qN}.
+\end{equation}
+$\gamma<1$ 表示 TT 核存储少于对应的稠密存储。基存储按双精度每元素 $8$ 字节计算，$1\,\mathrm{MiB}=2^{20}$ 字节；合计各组已保存的基，不含临时工作区。
+
+横轴 Iteration 表示累计校正步；算子作用数另计初始化、重启、预条件及残差检查中的 $A$ 作用。
+
+计算时间包含求解、残差检查及预条件构造与施加。
+
+\Needspace{5\baselineskip}
+\subsection{实现配置与比较范围}
+
+同组对照使用相同的 $A,b,x_\star$，初值均为 $x_0=0$。实验采用双精度浮点运算；普通 DGMRES 利用张量积结构计算矩阵--向量乘积，不显式形成 $N\times N$ 矩阵。各图的运行配置和逐步记录随论文源文件保存。表中时间均为各配置的一次运行；不同图的实现配置并不完全相同，时间只作图内配对比较。
+
+\begin{table}[H]
+\centering\small
+\caption{八组实验的主要参数与用途}\label{tab:exp-config}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{clccc}
+\toprule
+图 & 比较内容 & $d$ & 截断容差 & 重启长度\\
+\midrule
+\ref{fig:exp1}&固定截断的精度平台&4&$10^{-3},10^{-5},10^{-8}$&300\\
+\ref{fig:exp2}&固定与残差比例放松&4&同上，放松上限 $0.1$&100\\
+\ref{fig:exp3}&规模、秩与核存储&4,5,6&$10^{-5}$&25\\
+\ref{fig:exp4}&DGMRES 与 TT-DGMRES&4,5,6&$10^{-5}$&25\\
+\ref{fig:exp5}&TT 与右预条件 TT&4,5,6&$10^{-5}$&25\\
+\ref{fig:exp6}&TT 与自适应 TT&4,5,6&$10^{-5}$，可收紧&25\\
+\ref{fig:exp7}&TT 与 TT-Simpler&4,5,6&$10^{-8}$&25\\
+\ref{fig:exp8}&TT 与预条件自适应 TT&10&$10^{-5}$，可收紧&25\\
+\bottomrule
+\end{tabular}
+\end{table}

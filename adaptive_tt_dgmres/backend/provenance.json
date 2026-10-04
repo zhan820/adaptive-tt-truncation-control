@@ -1,0 +1,22 @@
+{
+  "source_bundle": "cuda_paper_scaling_postprocess_20260902_v4_k300",
+  "modifications": "Only intra-bundle imports changed to package-relative imports. Baseline solver preserved.",
+  "files": {
+    "paper_tt_gmres.py": {
+      "source_sha256": "7b06d6059818780d36c0f39cf60340fd463bd6fafafe32068e6840ce825a7188",
+      "vendored_sha256": "78e8120aef2144ba1741fa9c9129cef9a0c2e2cf465b9bf3f40428b77ee9ed93"
+    },
+    "paper_tt_dgmres.py": {
+      "source_sha256": "1f2530e32b13cfb334f5a0d72012bd099354f8b84a4d0042e3e8916ca70c9985",
+      "vendored_sha256": "5d7baa52cfed47c41a6964507542df27eb0cdd7894971e72b0d05ac1bd10ae8e"
+    },
+    "tt_dgmres_neumann_poisson_example.py": {
+      "source_sha256": "5bea267f84e611af698a6947a76c2ef8b82b85ad62586f3ed700adc430696267",
+      "vendored_sha256": "a0acc83a79dc1622bb97e14b31d9893b7807742d4af2e220143ebe417106f81b"
+    },
+    "tt_dgmres_seventh_fast_restart_sweep.py": {
+      "source_sha256": "7a333e484248abe33e1c387d3d3fafff10fccc49a1d7516f76b521875f5c6ffd",
+      "vendored_sha256": "45569114ceadadf364afe3eb7ddc527f2835348746569f9a62350a5f5883026a"
+    }
+  }
+}

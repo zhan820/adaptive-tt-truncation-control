@@ -1,0 +1,373 @@
+{
+  "audit_passed": true,
+  "requested_stage": "complete",
+  "manifest_stage": "complete",
+  "partial_training_audit": false,
+  "effectiveness_evaluated": true,
+  "output": "D:\\张量tt格式下的dgmres算法\\results\\rl_tt_dgmres_neumann_d4_20261001",
+  "manifest_sha256": "ac051ca7da3e4916a25a12370e198025054b08135979be7714dba704d70b9fa4",
+  "prepared_contract_sha256": "a49c4dc90bcdebbd0daac3fae21f7d3ed37f8f6abd5e68d1be32712278f72223",
+  "auditor_sha256": "1faed01d7a35e5cb3ac08a6a6ca2894c84c3a6e96911ded30a67cf7fe2f4a356",
+  "baseline": {
+    "global": 8,
+    "by_dimension": {
+      "4": 8
+    },
+    "validation_sha256": "c58b99e470ecb091e05f0fa1946e33d33086d1b927af384a6223f0f1b944f2d1"
+  },
+  "fitted_iterations": {
+    "0": {
+      "rows": 108,
+      "states": 12,
+      "successes": 108,
+      "problems_with_branch_labels": 6,
+      "model_sha256": "b087394a6ebfcc8d1fd4617e82f552041571bb8f543fa9b8d497c278a8e86eb3",
+      "fit_seconds": 12.110750999999999
+    }
+  },
+  "frozen_selection_verified": true,
+  "limitations": [
+    "Hash-linked evidence consistency, not a cryptographic external timestamp or proof of historical execution.",
+    "Models and tensor checkpoints are hash-checked without unpickling or executing them.",
+    "Saved independent float64 acceptance is checked; residual tensors are not recomputed.",
+    "Training and test share operators; only new RHS instances are held out.",
+    "Known paper seed cases are descriptive showcases, excluded from held-out claims.",
+    "An observed fixed-versus-RL gain alone does not establish cycle-by-cycle adaptation benefit; rl_static is a separate comparator.",
+    "Gate disagreement and failure penalties are not convergence or universal acceleration proofs."
+  ],
+  "aggregates": {
+    "fixed": {
+      "runs": 12,
+      "successes": 12,
+      "instances": 4,
+      "successful_instances_all_repeats": 4,
+      "median_success_seconds": 51.281266349999996,
+      "median_success_iterations": 187.5,
+      "status_counts": {
+        "eta_target": 12
+      },
+      "recoveries": 0,
+      "shield_interventions": 66,
+      "executed_action_counts": {
+        "8": 24,
+        "7": 36,
+        "6": 30
+      }
+    },
+    "fixed_by_dimension": {
+      "runs": 12,
+      "successes": 12,
+      "instances": 4,
+      "successful_instances_all_repeats": 4,
+      "median_success_seconds": 49.48177529999985,
+      "median_success_iterations": 187.5,
+      "status_counts": {
+        "eta_target": 12
+      },
+      "recoveries": 0,
+      "shield_interventions": 66,
+      "executed_action_counts": {
+        "8": 24,
+        "7": 36,
+        "6": 30
+      }
+    },
+    "rl": {
+      "runs": 12,
+      "successes": 12,
+      "instances": 4,
+      "successful_instances_all_repeats": 4,
+      "median_success_seconds": 48.64458430000001,
+      "median_success_iterations": 193.5,
+      "status_counts": {
+        "eta_target": 12
+      },
+      "recoveries": 0,
+      "shield_interventions": 53,
+      "executed_action_counts": {
+        "0": 51,
+        "1": 3,
+        "7": 27,
+        "6": 45,
+        "4": 3,
+        "8": 3
+      }
+    },
+    "rl_static": {
+      "runs": 12,
+      "successes": 6,
+      "instances": 4,
+      "successful_instances_all_repeats": 2,
+      "median_success_seconds": 45.580110700000034,
+      "median_success_iterations": 175.0,
+      "status_counts": {
+        "iteration_limit": 6,
+        "eta_target": 6
+      },
+      "recoveries": 0,
+      "shield_interventions": 21,
+      "executed_action_counts": {
+        "0": 204,
+        "7": 24,
+        "6": 12,
+        "8": 6
+      }
+    }
+  },
+  "aggregates_by_dimension": {
+    "4": {
+      "fixed": {
+        "runs": 12,
+        "successes": 12,
+        "instances": 4,
+        "successful_instances_all_repeats": 4,
+        "median_success_seconds": 51.281266349999996,
+        "median_success_iterations": 187.5,
+        "status_counts": {
+          "eta_target": 12
+        },
+        "recoveries": 0,
+        "shield_interventions": 66,
+        "executed_action_counts": {
+          "8": 24,
+          "7": 36,
+          "6": 30
+        }
+      },
+      "fixed_by_dimension": {
+        "runs": 12,
+        "successes": 12,
+        "instances": 4,
+        "successful_instances_all_repeats": 4,
+        "median_success_seconds": 49.48177529999985,
+        "median_success_iterations": 187.5,
+        "status_counts": {
+          "eta_target": 12
+        },
+        "recoveries": 0,
+        "shield_interventions": 66,
+        "executed_action_counts": {
+          "8": 24,
+          "7": 36,
+          "6": 30
+        }
+      },
+      "rl": {
+        "runs": 12,
+        "successes": 12,
+        "instances": 4,
+        "successful_instances_all_repeats": 4,
+        "median_success_seconds": 48.64458430000001,
+        "median_success_iterations": 193.5,
+        "status_counts": {
+          "eta_target": 12
+        },
+        "recoveries": 0,
+        "shield_interventions": 53,
+        "executed_action_counts": {
+          "0": 51,
+          "1": 3,
+          "7": 27,
+          "6": 45,
+          "4": 3,
+          "8": 3
+        }
+      },
+      "rl_static": {
+        "runs": 12,
+        "successes": 6,
+        "instances": 4,
+        "successful_instances_all_repeats": 2,
+        "median_success_seconds": 45.580110700000034,
+        "median_success_iterations": 175.0,
+        "status_counts": {
+          "iteration_limit": 6,
+          "eta_target": 6
+        },
+        "recoveries": 0,
+        "shield_interventions": 21,
+        "executed_action_counts": {
+          "0": 204,
+          "7": 24,
+          "6": 12,
+          "8": 6
+        }
+      }
+    }
+  },
+  "paired_speedups": [
+    {
+      "baseline": "fixed_by_dimension",
+      "candidate": "rl",
+      "split": "test",
+      "pairs": [
+        {
+          "problem": "test_d4_0000",
+          "baseline_seconds": 55.8273314999999,
+          "candidate_seconds": 49.38859689999981,
+          "speedup": 1.1303688503853835
+        },
+        {
+          "problem": "test_d4_0001",
+          "baseline_seconds": 56.21247649999998,
+          "candidate_seconds": 49.08024080000007,
+          "speedup": 1.1453178628251535
+        },
+        {
+          "problem": "test_d4_0002",
+          "baseline_seconds": 48.90094260000001,
+          "candidate_seconds": 48.659487699999985,
+          "speedup": 1.0049621340341408
+        },
+        {
+          "problem": "test_d4_0003",
+          "baseline_seconds": 47.91178260000015,
+          "candidate_seconds": 44.82364850000022,
+          "speedup": 1.0688951971413019
+        }
+      ],
+      "common_successful_instances": 4,
+      "geometric_mean_speedup": 1.0859448244181578
+    },
+    {
+      "baseline": "fixed",
+      "candidate": "rl",
+      "split": "test",
+      "pairs": [
+        {
+          "problem": "test_d4_0000",
+          "baseline_seconds": 56.39223990000005,
+          "candidate_seconds": 49.38859689999981,
+          "speedup": 1.1418068833617798
+        },
+        {
+          "problem": "test_d4_0001",
+          "baseline_seconds": 56.53200950000007,
+          "candidate_seconds": 49.08024080000007,
+          "speedup": 1.1518282832059779
+        },
+        {
+          "problem": "test_d4_0002",
+          "baseline_seconds": 50.09878679999997,
+          "candidate_seconds": 48.659487699999985,
+          "speedup": 1.0295790023288713
+        },
+        {
+          "problem": "test_d4_0003",
+          "baseline_seconds": 49.9024543999999,
+          "candidate_seconds": 44.82364850000022,
+          "speedup": 1.11330639227192
+        }
+      ],
+      "common_successful_instances": 4,
+      "geometric_mean_speedup": 1.1080610618302695
+    },
+    {
+      "baseline": "fixed_by_dimension",
+      "candidate": "rl_static",
+      "split": "test",
+      "pairs": [
+        {
+          "problem": "test_d4_0001",
+          "baseline_seconds": 56.21247649999998,
+          "candidate_seconds": 45.545959400000015,
+          "speedup": 1.2341923902913758
+        },
+        {
+          "problem": "test_d4_0003",
+          "baseline_seconds": 47.91178260000015,
+          "candidate_seconds": 50.47269270000015,
+          "speedup": 0.9492614726299318
+        }
+      ],
+      "common_successful_instances": 2,
+      "geometric_mean_speedup": 1.0823914661141074
+    },
+    {
+      "baseline": "rl_static",
+      "candidate": "rl",
+      "split": "test",
+      "pairs": [
+        {
+          "problem": "test_d4_0001",
+          "baseline_seconds": 45.545959400000015,
+          "candidate_seconds": 49.08024080000007,
+          "speedup": 0.9279897298303383
+        },
+        {
+          "problem": "test_d4_0003",
+          "baseline_seconds": 50.47269270000015,
+          "candidate_seconds": 44.82364850000022,
+          "speedup": 1.1260282103095625
+        }
+      ],
+      "common_successful_instances": 2,
+      "geometric_mean_speedup": 1.0222243465436098
+    }
+  ],
+  "claim_consistency": {
+    "primary_baseline": "fixed_by_dimension",
+    "success_count_no_lower": true,
+    "paired_speedup_above_one": true,
+    "paired_ci_lower_above_one": true,
+    "success_rate_statistical_noninferiority_proven": false,
+    "operator_disjoint": false,
+    "scope": "new independent RHS on the same finite isotropic Neumann operators"
+  },
+  "primary_observed_claim_met": true,
+  "paper_aggregates": {
+    "fixed_by_dimension": {
+      "runs": 3,
+      "successes": 3,
+      "instances": 1,
+      "successful_instances_all_repeats": 1,
+      "median_success_seconds": 41.81914599999999,
+      "median_success_iterations": 175.0,
+      "status_counts": {
+        "eta_target": 3
+      },
+      "recoveries": 0,
+      "shield_interventions": 18,
+      "executed_action_counts": {
+        "8": 3,
+        "7": 9,
+        "6": 9
+      }
+    },
+    "rl": {
+      "runs": 3,
+      "successes": 3,
+      "instances": 1,
+      "successful_instances_all_repeats": 1,
+      "median_success_seconds": 28.544283199999995,
+      "median_success_iterations": 154.0,
+      "status_counts": {
+        "eta_target": 3
+      },
+      "recoveries": 0,
+      "shield_interventions": 6,
+      "executed_action_counts": {
+        "0": 18,
+        "6": 9,
+        "7": 3
+      }
+    }
+  },
+  "paper_paired_speedups": {
+    "baseline": "fixed_by_dimension",
+    "candidate": "rl",
+    "split": "paper",
+    "pairs": [
+      {
+        "problem": "paper_d4_seed20260906",
+        "baseline_seconds": 41.81914599999999,
+        "candidate_seconds": 28.544283199999995,
+        "speedup": 1.4650620478709375
+      }
+    ],
+    "common_successful_instances": 1,
+    "geometric_mean_speedup": 1.4650620478709375
+  },
+  "bootstrap_check": "saved interval schema, attainable range and claim flags only; NumPy PCG64 draws not independently regenerated",
+  "checked_raw_summaries": 192
+}

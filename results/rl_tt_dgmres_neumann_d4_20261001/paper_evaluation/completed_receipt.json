@@ -1,0 +1,13 @@
+{
+  "summary_sha256": "8868fd17f0cd18c2b17f1e0485e67142b8edd883835410d7b342591500e62ade",
+  "raw_files_sha256": {
+    "paper_evaluation\\paper\\paper_d4_seed20260906_rl_r0.json": "6f1c8e686370be3e92c14d4610c8ce3439121c90edb35991c872dcf85503a54a",
+    "paper_evaluation\\paper\\paper_d4_seed20260906_fixed_by_dimension_r0.json": "f18dacc51e5da559afae03ea70a562ff909169e306ce99cafb5a63e749cb25ba",
+    "paper_evaluation\\paper\\paper_d4_seed20260906_rl_r1.json": "4669dcb7060b3637e7b595ece2bbf981905420c72c8e14499c0f8b7f029fb83f",
+    "paper_evaluation\\paper\\paper_d4_seed20260906_fixed_by_dimension_r1.json": "1df9dad7990a4719c430d71528bd2c552191f68617629b7107a1f19669d1ef08",
+    "paper_evaluation\\paper\\paper_d4_seed20260906_fixed_by_dimension_r2.json": "48fdbef7962255a285611451fe941268887700c736ba2a319c161e6b4368b419",
+    "paper_evaluation\\paper\\paper_d4_seed20260906_rl_r2.json": "2af0a0502ecdc7c8bc23cc520bc06d151d7734f2ab00e8aedbe28efd09088d8e"
+  },
+  "protocol_sha256": "1d927e61a99847f9123261c32ccde25bf45f1a43ac9a2d4d84746e5dd68fa31a",
+  "frozen_selection_sha256": "d38cc7b495f189591e2b7bb2129cb18e7add3245c3a3a70f47f7bf6a8bf44155"
+}

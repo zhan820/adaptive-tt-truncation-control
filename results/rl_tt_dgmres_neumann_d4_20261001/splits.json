@@ -1,0 +1,166 @@
+{
+  "train": [
+    {
+      "name": "train_d4_0002",
+      "n": 12,
+      "dims": 4,
+      "seed": 1230143283,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    },
+    {
+      "name": "train_d4_0005",
+      "n": 12,
+      "dims": 4,
+      "seed": 1710164437,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    },
+    {
+      "name": "train_d4_0004",
+      "n": 12,
+      "dims": 4,
+      "seed": 116994608,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    },
+    {
+      "name": "train_d4_0000",
+      "n": 12,
+      "dims": 4,
+      "seed": 1556831319,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    },
+    {
+      "name": "train_d4_0001",
+      "n": 12,
+      "dims": 4,
+      "seed": 211698835,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    },
+    {
+      "name": "train_d4_0003",
+      "n": 12,
+      "dims": 4,
+      "seed": 1272854675,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    }
+  ],
+  "validation": [
+    {
+      "name": "validation_d4_0001",
+      "n": 12,
+      "dims": 4,
+      "seed": 672632635,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    },
+    {
+      "name": "validation_d4_0000",
+      "n": 12,
+      "dims": 4,
+      "seed": 127987882,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    }
+  ],
+  "test": [
+    {
+      "name": "test_d4_0002",
+      "n": 12,
+      "dims": 4,
+      "seed": 575348238,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    },
+    {
+      "name": "test_d4_0001",
+      "n": 12,
+      "dims": 4,
+      "seed": 1223740307,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    },
+    {
+      "name": "test_d4_0000",
+      "n": 12,
+      "dims": 4,
+      "seed": 1238165428,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    },
+    {
+      "name": "test_d4_0003",
+      "n": 12,
+      "dims": 4,
+      "seed": 1132385768,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    }
+  ],
+  "paper": [
+    {
+      "name": "paper_d4_seed20260906",
+      "n": 12,
+      "dims": 4,
+      "seed": 20260906,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    }
+  ]
+}

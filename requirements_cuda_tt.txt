@@ -1,0 +1,8 @@
+# Keep the CUDA-enabled PyTorch shipped with the AutoDL image.
+# This file intentionally does not install or replace torch.
+tntorch==1.1.2
+numpy>=1.23,<2.0
+scipy>=1.9,<1.13
+matplotlib>=3.6,<3.9
+psutil>=5.9
+ipywidgets>=8.0,<9.0

@@ -1,0 +1,270 @@
+{
+  "contract": {
+    "seed": 202610021,
+    "config": {
+      "max_iterations": 300,
+      "tolerance": 1e-07,
+      "fixed_round_tolerance": 1e-10,
+      "diagnostic_tolerance": 1e-12,
+      "range_tolerance": 1e-09,
+      "max_tt_rank": 256,
+      "recovery_max_tt_rank": 256,
+      "diagnostic_max_rank": 512,
+      "seconds_budget": 75.0,
+      "failure_penalty": 5.0,
+      "max_recoveries": 3,
+      "reorthogonalization": "selective",
+      "orth_error_mode": "arnoldi_budget",
+      "rounding_audit": "tail",
+      "safety_filter": true,
+      "growth_limit": 1.5,
+      "projected_check_factor": 10.0,
+      "direct_breakdown_correction": true
+    },
+    "threads": 4,
+    "features": [
+      "log_eta_over_target",
+      "log_relative_transformed",
+      "previous_log_reduction",
+      "log_solution_rank",
+      "log_solution_bytes",
+      "previous_log_delta",
+      "previous_cycle_time_fraction",
+      "iteration_fraction",
+      "log_residual_gap",
+      "previous_round_error",
+      "previous_round_rank",
+      "previous_basis_bytes",
+      "tensor_order",
+      "mode_size",
+      "has_previous_cycle",
+      "elapsed_time_fraction",
+      "previous_update_dim",
+      "stagnation_count",
+      "fallback_count",
+      "rank_cap_fraction",
+      "rhs_log_rank_min",
+      "rhs_log_rank_mean",
+      "rhs_log_rank_max",
+      "rhs_log_rank_std",
+      "rhs_log_core_bytes",
+      "ab_log_rank_min",
+      "ab_log_rank_mean",
+      "ab_log_rank_max",
+      "ab_log_rank_std",
+      "ab_log_core_bytes",
+      "log_rhs_norm",
+      "log_ab_over_rhs_norm"
+    ],
+    "actions": [
+      {
+        "update_dim": 8,
+        "matvec_eps": 1e-08,
+        "orth_eps": 1e-10,
+        "solution_eps": 1e-10
+      },
+      {
+        "update_dim": 8,
+        "matvec_eps": 1e-05,
+        "orth_eps": 1e-08,
+        "solution_eps": 1e-08
+      },
+      {
+        "update_dim": 8,
+        "matvec_eps": 0.001,
+        "orth_eps": 1e-06,
+        "solution_eps": 1e-07
+      },
+      {
+        "update_dim": 16,
+        "matvec_eps": 1e-08,
+        "orth_eps": 1e-10,
+        "solution_eps": 1e-10
+      },
+      {
+        "update_dim": 16,
+        "matvec_eps": 1e-05,
+        "orth_eps": 1e-08,
+        "solution_eps": 1e-08
+      },
+      {
+        "update_dim": 16,
+        "matvec_eps": 0.001,
+        "orth_eps": 1e-06,
+        "solution_eps": 1e-07
+      },
+      {
+        "update_dim": 24,
+        "matvec_eps": 1e-08,
+        "orth_eps": 1e-10,
+        "solution_eps": 1e-10
+      },
+      {
+        "update_dim": 24,
+        "matvec_eps": 1e-05,
+        "orth_eps": 1e-08,
+        "solution_eps": 1e-08
+      },
+      {
+        "update_dim": 24,
+        "matvec_eps": 0.001,
+        "orth_eps": 1e-06,
+        "solution_eps": 1e-07
+      }
+    ],
+    "max_states_per_problem": 2,
+    "repeats": 3,
+    "train_dimensions": [
+      4
+    ],
+    "paper_protocol": {
+      "dimensions": [
+        4
+      ],
+      "seconds_budget": 75.0,
+      "tolerance_by_dimension": {
+        "4": 1e-07
+      },
+      "modes": [
+        "fixed_by_dimension",
+        "rl"
+      ],
+      "repeats": 3,
+      "unseen_dimension_fixed_rule": "global validation-selected fixed action",
+      "purpose": "new shared V3 solver reproduction, no preconditioner; not original figure timings"
+    },
+    "splits_sha256": "cc92d2d4be711c1b702cf2951e8a070550606703595bdf50bbc57f8351f74d7a",
+    "source_sha256": {
+      "adaptive_tt_dgmres\\__init__.py": "505a58d14d4c5d337511de01358c212668d619ad2f01ead3cc6b2e2c0eaffe91",
+      "adaptive_tt_dgmres\\__main__.py": "f91c4ca53a88e177f0e28034eb6c73d1dfb73729b3605f9883b193e223e3732d",
+      "adaptive_tt_dgmres\\backend\\__init__.py": "e640a7c50cd2715bbfb8fdb616ba2b93b833c90d7e2667adbf4fb50b96742dc2",
+      "adaptive_tt_dgmres\\backend\\paper_tt_dgmres.py": "5d7baa52cfed47c41a6964507542df27eb0cdd7894971e72b0d05ac1bd10ae8e",
+      "adaptive_tt_dgmres\\backend\\paper_tt_gmres.py": "78e8120aef2144ba1741fa9c9129cef9a0c2e2cf465b9bf3f40428b77ee9ed93",
+      "adaptive_tt_dgmres\\backend\\tt_dgmres_neumann_poisson_example.py": "a0acc83a79dc1622bb97e14b31d9893b7807742d4af2e220143ebe417106f81b",
+      "adaptive_tt_dgmres\\backend\\tt_dgmres_seventh_fast_restart_sweep.py": "45569114ceadadf364afe3eb7ddc527f2835348746569f9a62350a5f5883026a",
+      "adaptive_tt_dgmres\\controller.py": "4553df90405f360d90797a61fa2187f7f5339fa7454005711306422a3002b310",
+      "adaptive_tt_dgmres\\experiment.py": "a31669f08fd0c41601df6192352fd8b4cc6feb8d771741e6056154417ea15fb8",
+      "adaptive_tt_dgmres\\features.py": "068a84d1c569b8c5efdcbd35bdb5371c92d1c5da1970cfac9469a22451bf5b45",
+      "adaptive_tt_dgmres\\model.py": "f23d11373a66450e4e86fd96d32cf4bc65e5160f486333590cab1d88149ba97f",
+      "adaptive_tt_dgmres\\problems.py": "f669e12c1579ab99192d2cba6cb3d41073f502e52262a02e9d11f44b75d533c2",
+      "adaptive_tt_dgmres\\rounding.py": "da96bff7914ecce48c05ad74ccde2bc8e09243ebfbbde3e273608bee2d0f27fc",
+      "adaptive_tt_dgmres\\solver.py": "f3c35780b45499b3396fc9744c7bb1bc63525330157a8bd7076306a504973e30",
+      "rl_tt_dgmres_neumann\\__init__.py": "3cc3bd98c172941203add044a311b8b7d9048f4ea5b4243183ad337346f60d46",
+      "rl_tt_dgmres_neumann\\__main__.py": "f91c4ca53a88e177f0e28034eb6c73d1dfb73729b3605f9883b193e223e3732d",
+      "rl_tt_dgmres_neumann\\experiment.py": "a451788c29ee192d8b384d7a8a5edeb56916f50287395a0b1fdd430717cebc00",
+      "rl_tt_dgmres_neumann\\problems.py": "a3b18b68392bcebfa030711cac23c246cffff887ff7430817c5755ba93f93648",
+      "rl_tt_dgmres_v1\\__init__.py": "a462efdc0aa6e29b043e89b5f932e68455a5fae75537292c10ba9ee20241aa05",
+      "rl_tt_dgmres_v1\\__main__.py": "f91c4ca53a88e177f0e28034eb6c73d1dfb73729b3605f9883b193e223e3732d",
+      "rl_tt_dgmres_v1\\experiment.py": "fea53f6fbe696f54cf6cefdfb51431aa7e0e6194edea45307f5471402ce976d9",
+      "rl_tt_dgmres_v1\\learning.py": "32f36e69321ba71e4941a0fd625f6878e814701215ae73f37c27e7e8e64b2741",
+      "rl_tt_dgmres_v1\\predict.py": "c98225eaebc4c06fca16eeebaf31c701aadfdcd2e8f8cba552c7690770e13de0",
+      "rl_tt_dgmres_v1\\problems.py": "b504a86781adc89000ce58a0e6ca6279b1d17f321862dc0da9289953e19a9e38",
+      "rl_tt_dgmres_v1\\runner.py": "101579b004b101e8515be45b25127143ff2df8baedda340c63bd3546b5fe609b",
+      "rl_tt_dgmres_v2\\__init__.py": "0cb1f9b685ddcc9271b06432f2a8fa021a674012ab7ff2b0ca7a2ac7abcfcdf2",
+      "rl_tt_dgmres_v2\\__main__.py": "f91c4ca53a88e177f0e28034eb6c73d1dfb73729b3605f9883b193e223e3732d",
+      "rl_tt_dgmres_v2\\experiment.py": "383e0058d10b045dcc477cc353114da753d6484aa764c3d505444bcf762fd6c8",
+      "rl_tt_dgmres_v2\\predict.py": "d8996be6746b0ca198e63c9666efc3899bec0d9a956c6eabfdd0e9a06d009f84",
+      "rl_tt_dgmres_v2\\problems.py": "fa18ecebf55ea812523830756f45694735e83856813ca7b3760ba27bde7878b4",
+      "rl_tt_dgmres_v2\\rounding.py": "b715e7e5e8bceabae0e18f7092d877e9d251266c61d2a87a8adf9927bbe5b8b8",
+      "rl_tt_dgmres_v2\\runner.py": "7f7e8d7ced89f076c509011d21e5e46fb468de4310c90ae16a6ad275aa9e1a3f",
+      "rl_tt_dgmres_v2\\solver.py": "1b80e7c47a3ad7a3cd60ac556fab5962910fb07ac51c75c206646802eb1bfe0f",
+      "rl_tt_dgmres_v3\\__init__.py": "69493714ea5358ae058dd5c8e7c46f7ba7cca68d2f5cc044846f84d74af260ef",
+      "rl_tt_dgmres_v3\\__main__.py": "490c2bc711cd56e9a618475fb9ba8ee2ddeaca4fdbfa431d4ab34b928090c139",
+      "rl_tt_dgmres_v3\\experiment.py": "bc1601bb58e0ee37d5ac2ea1680aa1ee74b563ca67a9b1a6eedeb2fb18d5d9e4",
+      "rl_tt_dgmres_v3\\learning.py": "25df9be4481e7a6baf172e8e58b6a331fb1b07beb7589914b55390ec1e4f140b",
+      "rl_tt_dgmres_v3\\runner.py": "ad4edbf750f46e308623e7c9f670238d214120242054fa4e017283b90a003f45"
+    },
+    "builder_source": {
+      "path": "C:/Users/16081/Desktop/论文知识库/pytorch_version/backend_cells.json",
+      "cell_id": "33430136",
+      "function": "make_problem_nd",
+      "sha256": "8df85f8bc82f8f123b7356b5d3e18187769f6b7eac4213bca850d5f84e397133"
+    },
+    "paper_provenance": [
+      {
+        "original_path": "C:\\Users\\16081\\Desktop\\论文知识库\\pytorch_version\\backend_cells.json",
+        "snapshot": "paper_provenance\\backend_cells.json",
+        "sha256": "8df85f8bc82f8f123b7356b5d3e18187769f6b7eac4213bca850d5f84e397133"
+      },
+      {
+        "original_path": "C:\\Users\\16081\\Desktop\\论文知识库\\output\\上财模板_Nature方法修订_20260929\\chapters\\ch05_setup.tex",
+        "snapshot": "paper_provenance\\ch05_setup.tex",
+        "sha256": "0a870be2a8b8c682e691fe45a52ecbfea7239c0940064e0c05b8fc4b724104a8"
+      }
+    ],
+    "split_contract": {
+      "unit": "complete RHS instance including all states, action branches and repetitions",
+      "instance_disjoint": true,
+      "operator_disjoint": false,
+      "generalization": "new independent RHS on the same finite isotropic Neumann operators",
+      "paper_seed_excluded_from_training_validation_test": 20260906,
+      "excluded_development_seeds": [
+        2026100191,
+        2026104227,
+        2026105236,
+        2026106245
+      ],
+      "paper_cases": "known historical showcase, not an unseen test set",
+      "rhs_family": "paper CP3, DCT normal/(1+q)^2, global mean removal and unit normalization"
+    }
+  },
+  "frozen_sha256": "d38cc7b495f189591e2b7bb2129cb18e7add3245c3a3a70f47f7bf6a8bf44155",
+  "specs": [
+    {
+      "name": "test_d4_0002",
+      "n": 12,
+      "dims": 4,
+      "seed": 575348238,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    },
+    {
+      "name": "test_d4_0001",
+      "n": 12,
+      "dims": 4,
+      "seed": 1223740307,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    },
+    {
+      "name": "test_d4_0000",
+      "n": 12,
+      "dims": 4,
+      "seed": 1238165428,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    },
+    {
+      "name": "test_d4_0003",
+      "n": 12,
+      "dims": 4,
+      "seed": 1132385768,
+      "cp_rank": 3,
+      "max_mode": null,
+      "null_ratio": 0.1,
+      "spectral_decay": 2.0,
+      "preparation_tolerance": 1e-13,
+      "family": "paper_neumann_poisson_cp"
+    }
+  ],
+  "modes": [
+    "fixed",
+    "fixed_by_dimension",
+    "rl",
+    "rl_static"
+  ],
+  "repeats": 3,
+  "paper": false
+}

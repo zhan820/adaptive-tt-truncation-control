@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.vscode/
+.idea/
+.env
+.env.*
+deployment/
+results/neumann_new_run/
+*.log

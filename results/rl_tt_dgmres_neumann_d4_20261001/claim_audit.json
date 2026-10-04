@@ -1,0 +1,9 @@
+{
+  "primary_baseline": "fixed_by_dimension",
+  "success_count_no_lower": true,
+  "paired_speedup_above_one": true,
+  "paired_ci_lower_above_one": true,
+  "success_rate_statistical_noninferiority_proven": false,
+  "operator_disjoint": false,
+  "scope": "new independent RHS on the same finite isotropic Neumann operators"
+}

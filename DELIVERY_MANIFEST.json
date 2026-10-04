@@ -1,0 +1,2001 @@
+{
+  "format": "neumann_delivery_1",
+  "primary_results": "results/rl_tt_dgmres_neumann_d4_20261001",
+  "development_results": [
+    {
+      "path": "results/neumann_development_pilot_20261001",
+      "role": "development_only_not_heldout",
+      "protocol_sha256": "b18368059a39ef03d12874277e98daa916b9c319ee76e71b9c0026f7cd88d3f4",
+      "expected_jobs": 9,
+      "raw_jobs": 9,
+      "summary_jobs": 9,
+      "successes": 0,
+      "failures": 9,
+      "status_counts": {
+        "time_budget": 9
+      },
+      "complete_expected_grid": true,
+      "missing_jobs": [],
+      "raw_jobs_not_yet_in_summary": [],
+      "all_files_included_regardless_of_success": true,
+      "note": "Development source was not originally frozen; recorded protocols/raw logs are retained as development evidence, not held-out results."
+    },
+    {
+      "path": "results/neumann_rank256_pilot_20261001",
+      "role": "development_only_not_heldout",
+      "protocol_sha256": "5864d34deef4a9a8d6aa286cc20fd6d95c16698aede0deb408e72dcbbbd9fef0",
+      "expected_jobs": 9,
+      "raw_jobs": 9,
+      "summary_jobs": 9,
+      "successes": 2,
+      "failures": 7,
+      "status_counts": {
+        "iteration_limit": 1,
+        "eta_target": 2,
+        "time_budget": 4,
+        "rounding_rejected": 2
+      },
+      "complete_expected_grid": true,
+      "missing_jobs": [],
+      "raw_jobs_not_yet_in_summary": [],
+      "all_files_included_regardless_of_success": true,
+      "note": "Development source was not originally frozen; recorded protocols/raw logs are retained as development evidence, not held-out results."
+    },
+    {
+      "path": "results/neumann_rank512_pilot_20261001",
+      "role": "development_only_not_heldout",
+      "protocol_sha256": "0a3097b25a589def3e3b5b447109934ddb0552d584ae954d79fe37b7aff3795a",
+      "expected_jobs": 2,
+      "raw_jobs": 2,
+      "summary_jobs": 2,
+      "successes": 0,
+      "failures": 2,
+      "status_counts": {
+        "time_budget": 1,
+        "rounding_rejected": 1
+      },
+      "complete_expected_grid": true,
+      "missing_jobs": [],
+      "raw_jobs_not_yet_in_summary": [],
+      "all_files_included_regardless_of_success": true,
+      "note": "Development source was not originally frozen; recorded protocols/raw logs are retained as development evidence, not held-out results."
+    },
+    {
+      "path": "results/neumann_threads4_pilot_20261001",
+      "role": "development_only_not_heldout",
+      "protocol_sha256": "97f9b371b0b78d91dd04e64f121bb1fe42a03f1e5c2794f14600ab0680ec2f1e",
+      "expected_jobs": 2,
+      "raw_jobs": 2,
+      "summary_jobs": 2,
+      "successes": 1,
+      "failures": 1,
+      "status_counts": {
+        "eta_target": 1,
+        "time_budget": 1
+      },
+      "complete_expected_grid": true,
+      "missing_jobs": [],
+      "raw_jobs_not_yet_in_summary": [],
+      "all_files_included_regardless_of_success": true,
+      "note": "Development source was not originally frozen; recorded protocols/raw logs are retained as development evidence, not held-out results."
+    }
+  ],
+  "files": [
+    {
+      "path": "INDEPENDENT_AUDIT_NEUMANN.json",
+      "bytes": 10762,
+      "sha256": "09f62ad885d94e6c2143ad87078c399c407019ce3b5cd644321f6b56d04d3620"
+    },
+    {
+      "path": "adaptive_tt_dgmres/README.md",
+      "bytes": 5621,
+      "sha256": "1f2db90bd3f83d5bd86050c6955fc278899337a219c4c2cc6242d0f09eb23366"
+    },
+    {
+      "path": "adaptive_tt_dgmres/__init__.py",
+      "bytes": 248,
+      "sha256": "505a58d14d4c5d337511de01358c212668d619ad2f01ead3cc6b2e2c0eaffe91"
+    },
+    {
+      "path": "adaptive_tt_dgmres/__main__.py",
+      "bytes": 37,
+      "sha256": "f91c4ca53a88e177f0e28034eb6c73d1dfb73729b3605f9883b193e223e3732d"
+    },
+    {
+      "path": "adaptive_tt_dgmres/backend/__init__.py",
+      "bytes": 65,
+      "sha256": "e640a7c50cd2715bbfb8fdb616ba2b93b833c90d7e2667adbf4fb50b96742dc2"
+    },
+    {
+      "path": "adaptive_tt_dgmres/backend/paper_tt_dgmres.py",
+      "bytes": 78636,
+      "sha256": "5d7baa52cfed47c41a6964507542df27eb0cdd7894971e72b0d05ac1bd10ae8e"
+    },
+    {
+      "path": "adaptive_tt_dgmres/backend/paper_tt_gmres.py",
+      "bytes": 38629,
+      "sha256": "78e8120aef2144ba1741fa9c9129cef9a0c2e2cf465b9bf3f40428b77ee9ed93"
+    },
+    {
+      "path": "adaptive_tt_dgmres/backend/provenance.json",
+      "bytes": 1134,
+      "sha256": "93ebfb2a8d13c1b614fbc2040ff7d4303e4a488fc1601a89ab5bd85143dccb3c"
+    },
+    {
+      "path": "adaptive_tt_dgmres/backend/tt_dgmres_neumann_poisson_example.py",
+      "bytes": 34871,
+      "sha256": "a0acc83a79dc1622bb97e14b31d9893b7807742d4af2e220143ebe417106f81b"
+    },
+    {
+      "path": "adaptive_tt_dgmres/backend/tt_dgmres_seventh_fast_restart_sweep.py",
+      "bytes": 40331,
+      "sha256": "45569114ceadadf364afe3eb7ddc527f2835348746569f9a62350a5f5883026a"
+    },
+    {
+      "path": "adaptive_tt_dgmres/controller.py",
+      "bytes": 10706,
+      "sha256": "4553df90405f360d90797a61fa2187f7f5339fa7454005711306422a3002b310"
+    },
+    {
+      "path": "adaptive_tt_dgmres/experiment.py",
+      "bytes": 23283,
+      "sha256": "a31669f08fd0c41601df6192352fd8b4cc6feb8d771741e6056154417ea15fb8"
+    },
+    {
+      "path": "adaptive_tt_dgmres/features.py",
+      "bytes": 5689,
+      "sha256": "068a84d1c569b8c5efdcbd35bdb5371c92d1c5da1970cfac9469a22451bf5b45"
+    },
+    {
+      "path": "adaptive_tt_dgmres/model.py",
+      "bytes": 10864,
+      "sha256": "f23d11373a66450e4e86fd96d32cf4bc65e5160f486333590cab1d88149ba97f"
+    },
+    {
+      "path": "adaptive_tt_dgmres/problems.py",
+      "bytes": 4507,
+      "sha256": "f669e12c1579ab99192d2cba6cb3d41073f502e52262a02e9d11f44b75d533c2"
+    },
+    {
+      "path": "adaptive_tt_dgmres/rounding.py",
+      "bytes": 11665,
+      "sha256": "da96bff7914ecce48c05ad74ccde2bc8e09243ebfbbde3e273608bee2d0f27fc"
+    },
+    {
+      "path": "adaptive_tt_dgmres/solver.py",
+      "bytes": 31093,
+      "sha256": "f3c35780b45499b3396fc9744c7bb1bc63525330157a8bd7076306a504973e30"
+    },
+    {
+      "path": "adaptive_tt_dgmres/tests/test_features_rounding.py",
+      "bytes": 5788,
+      "sha256": "b384b1ece71490e842044d2191aa868be1d4497afff3c096656b6d980687e440"
+    },
+    {
+      "path": "adaptive_tt_dgmres/tests/test_integration.py",
+      "bytes": 3039,
+      "sha256": "8ae4259bfb7eb915bc31a8f2635199c876c88c5c33d1022633c9726e3d1e9d29"
+    },
+    {
+      "path": "adaptive_tt_dgmres/tests/test_model.py",
+      "bytes": 4085,
+      "sha256": "258375d8e3548e66a3bc723ecd27ebad54eb1af6c173f32aa1bd0a3049ad619d"
+    },
+    {
+      "path": "adaptive_tt_dgmres/tests/test_solver.py",
+      "bytes": 6796,
+      "sha256": "e49890793ca4774e6ef87d8d0d3d9939d7516d3b287424de4f2d23ec23564ab8"
+    },
+    {
+      "path": "audit_rl_tt_dgmres_neumann.py",
+      "bytes": 53241,
+      "sha256": "1faed01d7a35e5cb3ac08a6a6ca2894c84c3a6e96911ded30a67cf7fe2f4a356"
+    },
+    {
+      "path": "package_rl_tt_dgmres_neumann.py",
+      "bytes": 15362,
+      "sha256": "99c225603680225bfd8f98131896d44dbc33332b62ac33ea150eacd276a1356a"
+    },
+    {
+      "path": "pilot_neumann_training.py",
+      "bytes": 3644,
+      "sha256": "e969d1643b638e08dfbc9f4c9d0779a20dfb5bcbfe8341b08e48c22a04045b39"
+    },
+    {
+      "path": "requirements_cuda_tt.txt",
+      "bytes": 227,
+      "sha256": "8247b3c719151858873457dcf4909bb8d4481c7dd119cbe82a6d5ef27578c5ce"
+    },
+    {
+      "path": "requirements_full_simpler_dgmres.txt",
+      "bytes": 76,
+      "sha256": "c7ec7db7c27861c1b3af9322f581bf1eb5927951cdb9cf912187872be1190582"
+    },
+    {
+      "path": "requirements_tt_simpler_dgmres.txt",
+      "bytes": 87,
+      "sha256": "8f56ab89645178938b24afbc14455ed1a456d09a3b5de2acfb7f5101ff7cfb57"
+    },
+    {
+      "path": "results/neumann_development_pilot_20261001/pilot_n12_d4_a3.json",
+      "bytes": 5838316,
+      "sha256": "22ff14785bc526412136f6f74b5c2a08479e9af0ad5b899f07b308388a8c6473"
+    },
+    {
+      "path": "results/neumann_development_pilot_20261001/pilot_n12_d4_a4.json",
+      "bytes": 7628030,
+      "sha256": "2cbee9b798bc1855cf59fd3aac59651bbc88b04e5f55f3d37e4e166ba7611328"
+    },
+    {
+      "path": "results/neumann_development_pilot_20261001/pilot_n12_d4_a6.json",
+      "bytes": 6250870,
+      "sha256": "67890f0f12a82c2d03fddd2a77ce48d9ebcda47fd8afd9eb46122f63b425b854"
+    },
+    {
+      "path": "results/neumann_development_pilot_20261001/pilot_n12_d5_a3.json",
+      "bytes": 1951741,
+      "sha256": "112235a87a6761fa4826644cd2574f9ba0b2bd1c407f511d2149e04c533d2d60"
+    },
+    {
+      "path": "results/neumann_development_pilot_20261001/pilot_n12_d5_a4.json",
+      "bytes": 1559432,
+      "sha256": "1e16647b59b4b61f5fd6a873caa5c7d696a4469047063d0972e8e6001d1d7159"
+    },
+    {
+      "path": "results/neumann_development_pilot_20261001/pilot_n12_d5_a6.json",
+      "bytes": 2188092,
+      "sha256": "12dbea6fafb3682309aaf711c0e5b4143fdbbc3907e75d0b05d7a2931a6d4b79"
+    },
+    {
+      "path": "results/neumann_development_pilot_20261001/pilot_n12_d6_a3.json",
+      "bytes": 1410061,
+      "sha256": "bb33f328a6557a870e9bfedfae95228d754387b39a0cad8ebb36b7207c89a48b"
+    },
+    {
+      "path": "results/neumann_development_pilot_20261001/pilot_n12_d6_a4.json",
+      "bytes": 2439257,
+      "sha256": "00dee0517c1d7d40c13110a4044d6b8426e8b6e880e2986ced116eb8e767a014"
+    },
+    {
+      "path": "results/neumann_development_pilot_20261001/pilot_n12_d6_a6.json",
+      "bytes": 1637791,
+      "sha256": "0923b1107978ea3d72245a642542d0cf2d58b54dacc2df64397af2d05ea87895"
+    },
+    {
+      "path": "results/neumann_development_pilot_20261001/protocol.json",
+      "bytes": 1665,
+      "sha256": "b18368059a39ef03d12874277e98daa916b9c319ee76e71b9c0026f7cd88d3f4"
+    },
+    {
+      "path": "results/neumann_development_pilot_20261001/summary.json",
+      "bytes": 27385,
+      "sha256": "7ccb687a09f0b36984729952ca952c585ad0948c9d3c5495b0ca62d75a96a556"
+    },
+    {
+      "path": "results/neumann_rank256_pilot_20261001/pilot_n12_d4_a4.json",
+      "bytes": 11317347,
+      "sha256": "fb6810278bb3a3c3ca518367e1822ac50901257a0fcbce182c6f6bd772411332"
+    },
+    {
+      "path": "results/neumann_rank256_pilot_20261001/pilot_n12_d4_a7.json",
+      "bytes": 9414594,
+      "sha256": "8cc9d8fd2f86cacdd9ea7d299d150cc5913b7b467b5e05d1ad945bdc78ad6290"
+    },
+    {
+      "path": "results/neumann_rank256_pilot_20261001/pilot_n12_d4_a8.json",
+      "bytes": 9222730,
+      "sha256": "9515f58ffc9ce59f1bfe02236f4fb6c9224d151104cd27b167a39d7b1a73539d"
+    },
+    {
+      "path": "results/neumann_rank256_pilot_20261001/pilot_n12_d5_a4.json",
+      "bytes": 2621799,
+      "sha256": "0761b0546433a0e068b976f4b93d05c3af305b25fd6d0ed19c07bdf86edc5f51"
+    },
+    {
+      "path": "results/neumann_rank256_pilot_20261001/pilot_n12_d5_a7.json",
+      "bytes": 3608109,
+      "sha256": "c88e9aababb463e4c46f2dcb5cef3831ef1164914131ab7bba0d9f52775f5c9a"
+    },
+    {
+      "path": "results/neumann_rank256_pilot_20261001/pilot_n12_d5_a8.json",
+      "bytes": 2398899,
+      "sha256": "a5feee2205d8f512ed0e34333b11fcadfcf91cdaa1b840144b49da3b4b6d62d6"
+    },
+    {
+      "path": "results/neumann_rank256_pilot_20261001/pilot_n12_d6_a4.json",
+      "bytes": 962899,
+      "sha256": "89b235b102ffe114bb76eb54833f469dcca775fdeb83507f0dd411a739693806"
+    },
+    {
+      "path": "results/neumann_rank256_pilot_20261001/pilot_n12_d6_a7.json",
+      "bytes": 1543170,
+      "sha256": "7f7d2f1c7162717948db1623010cb4445669a9c6a64db0286c502f47ab704264"
+    },
+    {
+      "path": "results/neumann_rank256_pilot_20261001/pilot_n12_d6_a8.json",
+      "bytes": 2697269,
+      "sha256": "42ef715274e53687df6e67006deb7e9373de08faba6cfa93c3c12b48f897f33b"
+    },
+    {
+      "path": "results/neumann_rank256_pilot_20261001/protocol.json",
+      "bytes": 1666,
+      "sha256": "5864d34deef4a9a8d6aa286cc20fd6d95c16698aede0deb408e72dcbbbd9fef0"
+    },
+    {
+      "path": "results/neumann_rank256_pilot_20261001/summary.json",
+      "bytes": 26944,
+      "sha256": "528482502fc459008a013cf3796c65ff0205251dcbd0107f8c7ef2cf1d8781d2"
+    },
+    {
+      "path": "results/neumann_rank512_pilot_20261001/pilot_n12_d5_a7.json",
+      "bytes": 5903537,
+      "sha256": "49faaf377b31dfb686ec567e2dad39b720d07b0ea4d1b294d905490e955e5397"
+    },
+    {
+      "path": "results/neumann_rank512_pilot_20261001/pilot_n12_d6_a7.json",
+      "bytes": 1786393,
+      "sha256": "54d4b5d7e12769dbc6375ff521ebfcfc4cdb6a5a406a33af51dc1edfd9dde254"
+    },
+    {
+      "path": "results/neumann_rank512_pilot_20261001/protocol.json",
+      "bytes": 1359,
+      "sha256": "0a3097b25a589def3e3b5b447109934ddb0552d584ae954d79fe37b7aff3795a"
+    },
+    {
+      "path": "results/neumann_rank512_pilot_20261001/summary.json",
+      "bytes": 6017,
+      "sha256": "286da9784da37ce84dfcea8f51a844fd0c8ed9fc11ca96f936927a9f27b0e4f3"
+    },
+    {
+      "path": "results/neumann_threads4_pilot_20261001/pilot_n12_d4_a7.json",
+      "bytes": 9420639,
+      "sha256": "41a8d8f663cf2c15de4b02230d6141189ace005fc2a26d9be818aa45db4b985f"
+    },
+    {
+      "path": "results/neumann_threads4_pilot_20261001/pilot_n12_d5_a7.json",
+      "bytes": 6181683,
+      "sha256": "cf1d66e3c0f7e2aa9c5e606adb9afbe519ff1701f5da61dc606c3405afe49c7a"
+    },
+    {
+      "path": "results/neumann_threads4_pilot_20261001/protocol.json",
+      "bytes": 1376,
+      "sha256": "97f9b371b0b78d91dd04e64f121bb1fe42a03f1e5c2794f14600ab0680ec2f1e"
+    },
+    {
+      "path": "results/neumann_threads4_pilot_20261001/summary.json",
+      "bytes": 5951,
+      "sha256": "8521a396947a99066d2330d9f4114f961fe5fe7900a28ef3582f0f519650a011"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/REPORT.md",
+      "bytes": 2752,
+      "sha256": "06847f243d7a2ffe390647741f3103d32f2d6705458c19f0a0a35fb4cd9516ef"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/RESULTS_SUMMARY.md",
+      "bytes": 5716,
+      "sha256": "5ddf053ed0f3f6266f736526b763f51dc8c361435b3b16a14d8343101f5cfbcd"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/aggregate.json",
+      "bytes": 1759,
+      "sha256": "6908365adfce14d104c2fd534bd0af2180700bceea93013bf6fbdc941fa167d7"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/aggregate_by_dimension.json",
+      "bytes": 1928,
+      "sha256": "36f022b43b81961ff3e0b4008f1e3d0018cae939719f5e0022b71af2c4b6019c"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/audit_complete.json",
+      "bytes": 11135,
+      "sha256": "24cacdf58b03c8af9754854af827efc9d2b82028e91f0e8ebc9a01c0d9415607"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/audit_trained.json",
+      "bytes": 1919,
+      "sha256": "72e1db0433eef14c0ba4feb3b7d6ead7885a25a92a9ee5be14831d0932ae1519"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/baseline_validation.json",
+      "bytes": 68301,
+      "sha256": "c58b99e470ecb091e05f0fa1946e33d33086d1b927af384a6223f0f1b944f2d1"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/claim_audit.json",
+      "bytes": 331,
+      "sha256": "35565e60188bdfe2a924437dde5493df34ea896a6f0e8c5e5a8d04ffed02219d"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/controller_iteration_0.pt",
+      "bytes": 49612,
+      "sha256": "b087394a6ebfcc8d1fd4617e82f552041571bb8f543fa9b8d497c278a8e86eb3"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/completed_receipt.json",
+      "bytes": 6286,
+      "sha256": "96fc6d3a1140822fd7948c224ce82a2d95def2bc738d50e76204caec1113857e"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/protocol.json",
+      "bytes": 10745,
+      "sha256": "b9246aef4bce6d858530859b34c1e54163fd8315d14bb2cf6815a5dbf1d6dfa7"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0000_fixed_by_dimension_r0.json",
+      "bytes": 33354,
+      "sha256": "c9dcddc4ac70d8e6c071743fd4e1608a9fa0af69c03d35249272aecc3c3f82d0"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0000_fixed_by_dimension_r1.json",
+      "bytes": 33357,
+      "sha256": "86569eba16f0f8db1868e8d2fd6cd4ac1cc4fd3ed835273bcacd42137a9ca8d4"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0000_fixed_by_dimension_r2.json",
+      "bytes": 33361,
+      "sha256": "edeb6f2b76c0fb3aad72d6aafe382c6e1bfd62dcd89661c70299f4e6ea16a1e5"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0000_fixed_r0.json",
+      "bytes": 33346,
+      "sha256": "9098bfe63b63dd90ea772fd5e5cce15785d1b98d6bc7bc6ab623cf04c4d93d62"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0000_fixed_r1.json",
+      "bytes": 33345,
+      "sha256": "b23c4418c92a54d179dd9f89b2bf67d8f0993ee34e792d8c3e51025aa125a662"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0000_fixed_r2.json",
+      "bytes": 33348,
+      "sha256": "675aba6e10d812fb599e46ae54751d412d04020765c943abac3639eef59234cb"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0000_rl_r0.json",
+      "bytes": 156028,
+      "sha256": "ce35edfdbbf9f9e0067902aa07087888ff02904ff27176d9ca6fb933fc91ed84"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0000_rl_r1.json",
+      "bytes": 156087,
+      "sha256": "892e0355fba0e8f76a4e5125d9226855ed8953cf8cd29db1edbe42719479a854"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0000_rl_r2.json",
+      "bytes": 156097,
+      "sha256": "c1df63c770996a5731faf2cfd579e660a1736ae4a7fe531f167317e8cc1b6474"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0000_rl_static_r0.json",
+      "bytes": 174269,
+      "sha256": "08a0e876c25aadb39f028bc70ead1f42c814bcdf091611b44db2ec645bc2d670"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0000_rl_static_r1.json",
+      "bytes": 174289,
+      "sha256": "4a349a480bd88234e499e22b7fbee6f8609ece70ffdd5ffbadf44fe858195c13"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0000_rl_static_r2.json",
+      "bytes": 174271,
+      "sha256": "17d9bdd1336dc7d5f19e9bb6309f621d10a761f8b94cddb4a6bb84e61eabaf1b"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0001_fixed_by_dimension_r0.json",
+      "bytes": 33354,
+      "sha256": "a64e194f43240bed831ab75f5c5e640d2d5f934d7bd47a68683dab9fcaea793a"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0001_fixed_by_dimension_r1.json",
+      "bytes": 33352,
+      "sha256": "660f68b7c592e62176cb16b7df838319f33ed2e71f5232bcfbadc31181acd1e8"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0001_fixed_by_dimension_r2.json",
+      "bytes": 33358,
+      "sha256": "2e8e00095c2954f74afe39ec29a7d2c3f916d80132b93a6f44a5e2befd47e021"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0001_fixed_r0.json",
+      "bytes": 33340,
+      "sha256": "c1fed9a894b34842d502480684ef3d34743d74d196c120f0487b4c53083db633"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0001_fixed_r1.json",
+      "bytes": 33339,
+      "sha256": "46bc7aef3785abb09a72d3e481698841e1c5d66123d44f117783ca28b14af936"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0001_fixed_r2.json",
+      "bytes": 33342,
+      "sha256": "7aaac4bfd82f7935f4a0fa1848bd9fd3c9a0a402889a7edf13d2afd7c0200bdc"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0001_rl_r0.json",
+      "bytes": 73173,
+      "sha256": "b922ba9bdd0106c133391405ad83ea384cd97731079a2f636d58295e4cec07ba"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0001_rl_r1.json",
+      "bytes": 73132,
+      "sha256": "5a4deabdde9ad491bc1efb97f989c07719eff72545436e2ca3ecaf4177ac45be"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0001_rl_r2.json",
+      "bytes": 73176,
+      "sha256": "942a0891c846e437916fbcec4089a2dec8ae92b9c0ee03f66ff40015b270a0ac"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0001_rl_static_r0.json",
+      "bytes": 42070,
+      "sha256": "e9ca16cb527483cc8534f17ad974666395dc01069f39a02ed74362d49e9ba2dd"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0001_rl_static_r1.json",
+      "bytes": 42059,
+      "sha256": "c26443f77c99ef4f9e1f09f1bc00f50c97554928f381f654a53369d7d6662bf7"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0001_rl_static_r2.json",
+      "bytes": 42081,
+      "sha256": "99d2727d8f38ed7f0b4f10aff9c013b06921eb76d88f0816350c97338a2ec7ce"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0002_fixed_by_dimension_r0.json",
+      "bytes": 29856,
+      "sha256": "0914ccb13ea99bd92ce7417938c13137d8129592d012fb2e88cab4a956867c01"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0002_fixed_by_dimension_r1.json",
+      "bytes": 29854,
+      "sha256": "a656c8da40a5e1d9d5c17ea26fcf75f46a182ba8293a7e183ccf481d037fe65d"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0002_fixed_by_dimension_r2.json",
+      "bytes": 29854,
+      "sha256": "01d911c29e9e796d204101fa86e3f6d550aa7c6df5110fe03c8a3ad50f712150"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0002_fixed_r0.json",
+      "bytes": 29842,
+      "sha256": "f0564574b31c31c0d9aa7b530278f7cf974e8407105b03616b90e129017c0c0e"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0002_fixed_r1.json",
+      "bytes": 29839,
+      "sha256": "8b32b5d7d2f3ae973d4a417aa059005222fd8987061e0faac2c6b84ead1db300"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0002_fixed_r2.json",
+      "bytes": 29840,
+      "sha256": "b752ecd0379a2104318207c0df41c1aaedcc6961f08a7c1ed90baef031c567b6"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0002_rl_r0.json",
+      "bytes": 98441,
+      "sha256": "e277158391e0f33779e8c5598f67c2a56fac105e7a587433ccc44e2aa479a3f9"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0002_rl_r1.json",
+      "bytes": 98434,
+      "sha256": "c4ac821fc16986e2bcec229bc5ae17c57e857fec1f723522bcdbf510c96743e5"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0002_rl_r2.json",
+      "bytes": 98469,
+      "sha256": "a163169cfd0c06eedad7238ec945955bc69d535a849f39e924652365c14e0760"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0002_rl_static_r0.json",
+      "bytes": 174208,
+      "sha256": "391a381089830c320f43a3b3844229aef42d9cf35be9c7ff85e1d5b754915f4e"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0002_rl_static_r1.json",
+      "bytes": 174346,
+      "sha256": "2916436020a53179bee810024f78cb45e76d33169f5a37a47627134482ffcd31"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0002_rl_static_r2.json",
+      "bytes": 174314,
+      "sha256": "a496dd51d95e7bed7f0ab0b0aa0cc3635d12523ef2f55be6cf7b5e6d3d89665d"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0003_fixed_by_dimension_r0.json",
+      "bytes": 29864,
+      "sha256": "3fa5ed96735df2a8d8f8229d591b29e4fb6ae7c8414cead21792fb550c877bf7"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0003_fixed_by_dimension_r1.json",
+      "bytes": 29861,
+      "sha256": "4394481a734b449638494aff9542822624d3d13e303851cd2597a02e656be0ab"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0003_fixed_by_dimension_r2.json",
+      "bytes": 29858,
+      "sha256": "ea2b30535757c0f4a9cb93f2ca3fb2828c26804adab42538d0e07644a7437a0a"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0003_fixed_r0.json",
+      "bytes": 29852,
+      "sha256": "b7f93cac912b117963f20a96d412bc6ec0ff85440558d2b24aa0039a5f202645"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0003_fixed_r1.json",
+      "bytes": 29854,
+      "sha256": "9cc4de054099ba5f28007d91efffb6d4a4589c5cdb4f3aad19fe85383ad7eb8e"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0003_fixed_r2.json",
+      "bytes": 29849,
+      "sha256": "f5f6b8392996c72a4b7e1117d99e4fb545fa17d64aa6048a24cfbb55df4f81d5"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0003_rl_r0.json",
+      "bytes": 64328,
+      "sha256": "ecf940ba23e7c0e7fd7396cced9487136f0cf6837ffd17cafa47d6b1d2b98a83"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0003_rl_r1.json",
+      "bytes": 64768,
+      "sha256": "25f43280bc0eff0fff522a6be0c6a838f37324459b773914ca472ed4f8943f06"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0003_rl_r2.json",
+      "bytes": 64776,
+      "sha256": "8f7a8368f714225e40bc317f5ef8a91609fc81171225b4698a1ac16f64a69336"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0003_rl_static_r0.json",
+      "bytes": 42414,
+      "sha256": "4bec8774123cab39e8ac033cbaf24f1f1f4e57ffcba7d04097aa378c29d22664"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0003_rl_static_r1.json",
+      "bytes": 42396,
+      "sha256": "5bda41cbc87056bebcfa8feb3571904009e184f19b7fcd37b81c0b78bd9b6033"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation/test/test_d4_0003_rl_static_r2.json",
+      "bytes": 42400,
+      "sha256": "fa8c1a3d8f2f9daa93353e95aae93b79e6c744a28d23dcc341fff3506bfd74d2"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/evaluation_summary.json",
+      "bytes": 155003,
+      "sha256": "f9fafbf826b43db865ba90c59d2d41f5ee99f72913405179f4c0a4292fcb14b3"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fit_0.json",
+      "bytes": 1331,
+      "sha256": "6e3f01c1b3a64ce0b8f3e3f66cbc92d2be548438fc7184add24474b2393bbd87"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fit_protocol_0.json",
+      "bytes": 5043,
+      "sha256": "e3969ed43cae8bfe62557500ed0fe20d747c89d95cc2684183ab0897a82012c5"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_protocol.json",
+      "bytes": 10100,
+      "sha256": "25793acc488b68c5c1d5a0fe9d3185534df0e56333d7ec2dd2d25a3afcd72478"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_validation/validation_d4_0000_a0.json",
+      "bytes": 121866,
+      "sha256": "60e085c8d010c33082a756081912600e807709f8c7917bd239c3fd3ebdf1a4fe"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_validation/validation_d4_0000_a1.json",
+      "bytes": 121847,
+      "sha256": "5e599f8113629a93de460edd13dc13ad96f787b6a81fec3057831ccfaee5aaec"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_validation/validation_d4_0000_a2.json",
+      "bytes": 121864,
+      "sha256": "263bbfa15a239dfbe3cb2b696bb9594e378594f13d61187117e322ff245c2840"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_validation/validation_d4_0000_a3.json",
+      "bytes": 65917,
+      "sha256": "c6c5fec3959bce8cfb3f19b9828b89123f1cb30727477599b32ec8d62bec0b4d"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_validation/validation_d4_0000_a4.json",
+      "bytes": 65929,
+      "sha256": "883e68c8dcd081a4ec2d1ef574ee2d30d4c2d3ab138aaca4e58ea5b07b9a694b"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_validation/validation_d4_0000_a5.json",
+      "bytes": 65926,
+      "sha256": "bb2a61530d4e2ce65e25c2efa51e1688bd67c3239747e349aede2af7a268163e"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_validation/validation_d4_0000_a6.json",
+      "bytes": 27421,
+      "sha256": "7baa2ba84b17ff4ef7d6c54fbb704bc534f3a86bf7b23c4630025c8b15ee022a"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_validation/validation_d4_0000_a7.json",
+      "bytes": 27434,
+      "sha256": "de5bee29252ce3b1bce450a004f1c8002c4702e88190dc3ff285e697b97537d2"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_validation/validation_d4_0000_a8.json",
+      "bytes": 27420,
+      "sha256": "475cda24c5fa789491f47d228b604215d65d382b0ce0e93eda18df223a8d2dbe"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_validation/validation_d4_0001_a0.json",
+      "bytes": 121869,
+      "sha256": "8fa3661ccb68dbada3a1fe3278125ab9079f5e2ac51484bda9707c24f9d71705"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_validation/validation_d4_0001_a1.json",
+      "bytes": 121859,
+      "sha256": "092d922227ed696f5a3a0216c7cd620cd0e8bfe08e8f615bcf25c61b38f38128"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_validation/validation_d4_0001_a2.json",
+      "bytes": 121885,
+      "sha256": "833224c0431b7603e1663cf25dc4be4f0a24786716632f5afb1fb27ce9ae454f"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_validation/validation_d4_0001_a3.json",
+      "bytes": 65925,
+      "sha256": "4433414731de56e6c92d83290383c2f958a4f1deb675360b6d542cf78c4f63c1"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_validation/validation_d4_0001_a4.json",
+      "bytes": 65924,
+      "sha256": "948baa3f6be7b9d070f938abc115cf30a87e3262990c3a5a2461ddda8bfc70e1"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_validation/validation_d4_0001_a5.json",
+      "bytes": 65933,
+      "sha256": "99fb407d2974c1ef5b402918f1ef3ae9a85a960b221930324878f2ed14ff3bf9"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_validation/validation_d4_0001_a6.json",
+      "bytes": 30917,
+      "sha256": "91c62e90934789d2290adceb752a0b010404d5729fcec4dc8c37102445623774"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_validation/validation_d4_0001_a7.json",
+      "bytes": 30921,
+      "sha256": "237eda3133ac44f02aaaa432d2ec820788c890a7af03aee56cfa1a3033a9dac2"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/fixed_validation/validation_d4_0001_a8.json",
+      "bytes": 27430,
+      "sha256": "2a310a142675e1801cab844d6e1562a881e90ee21c9a6028bf3b102bdcbed9db"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/frozen_selection.json",
+      "bytes": 10749,
+      "sha256": "d38cc7b495f189591e2b7bb2129cb18e7add3245c3a3a70f47f7bf6a8bf44155"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/manifest.json",
+      "bytes": 11464,
+      "sha256": "ac051ca7da3e4916a25a12370e198025054b08135979be7714dba704d70b9fa4"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/paired_speedups.json",
+      "bytes": 3516,
+      "sha256": "1ca0334ec1fb401b3ef0e25dbffc4ad08df9ed56dbfee1ce576cce4c0ca96644"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/paper_evaluation/completed_receipt.json",
+      "bytes": 1162,
+      "sha256": "8a280d49b4b18f73d3b42d84be3608f910f3734f0ceda04b1edf4b51509919fe"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/paper_evaluation/paper/paper_d4_seed20260906_fixed_by_dimension_r0.json",
+      "bytes": 29858,
+      "sha256": "f18dacc51e5da559afae03ea70a562ff909169e306ce99cafb5a63e749cb25ba"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/paper_evaluation/paper/paper_d4_seed20260906_fixed_by_dimension_r1.json",
+      "bytes": 29853,
+      "sha256": "1df9dad7990a4719c430d71528bd2c552191f68617629b7107a1f19669d1ef08"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/paper_evaluation/paper/paper_d4_seed20260906_fixed_by_dimension_r2.json",
+      "bytes": 29867,
+      "sha256": "48fdbef7962255a285611451fe941268887700c736ba2a319c161e6b4368b419"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/paper_evaluation/paper/paper_d4_seed20260906_rl_r0.json",
+      "bytes": 88795,
+      "sha256": "6f1c8e686370be3e92c14d4610c8ce3439121c90edb35991c872dcf85503a54a"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/paper_evaluation/paper/paper_d4_seed20260906_rl_r1.json",
+      "bytes": 88762,
+      "sha256": "4669dcb7060b3637e7b595ece2bbf981905420c72c8e14499c0f8b7f029fb83f"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/paper_evaluation/paper/paper_d4_seed20260906_rl_r2.json",
+      "bytes": 88850,
+      "sha256": "2af0a0502ecdc7c8bc23cc520bc06d151d7734f2ab00e8aedbe28efd09088d8e"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/paper_evaluation/protocol.json",
+      "bytes": 9844,
+      "sha256": "1d927e61a99847f9123261c32ccde25bf45f1a43ac9a2d4d84746e5dd68fa31a"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/paper_provenance/backend_cells.json",
+      "bytes": 194298,
+      "sha256": "8df85f8bc82f8f123b7356b5d3e18187769f6b7eac4213bca850d5f84e397133"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/paper_provenance/ch05_setup.tex",
+      "bytes": 5731,
+      "sha256": "0a870be2a8b8c682e691fe45a52ecbfea7239c0940064e0c05b8fc4b724104a8"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/paper_report.json",
+      "bytes": 22247,
+      "sha256": "a29fb5c6304a6ef3c780486f7f9f14a77432440e7ad03cc40461fd0f989ddf1a"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/paper_summary.json",
+      "bytes": 19032,
+      "sha256": "8868fd17f0cd18c2b17f1e0485e67142b8edd883835410d7b342591500e62ade"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/prepared_contract.json",
+      "bytes": 8910,
+      "sha256": "a49c4dc90bcdebbd0daac3fae21f7d3ed37f8f6abd5e68d1be32712278f72223"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/collection_protocol.json",
+      "bytes": 7119,
+      "sha256": "bb1a866868eed7a8264e5b7d3fc000847b50cbc52e91fcd3441ffc2a1cc82758"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/rows.json",
+      "bytes": 149517,
+      "sha256": "ec672bb5b24c0ee3fb15b30157b1d660cace6f48dd64c89d5b7980590db28f6a"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/summary.json",
+      "bytes": 13349,
+      "sha256": "ee7bfcc0e77326d87de33fdf7da2d07f735ceab2a386ab83840096ff3900b7f2"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_collection.json",
+      "bytes": 36094,
+      "sha256": "3a3b30ea90f5461c5b3953d4a9fc8c824d8ec0f41366a6b933245332c31857b6"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_s0_a0.json",
+      "bytes": 45776,
+      "sha256": "0a4e01e1c748db73f5d491af3bef7f587796f1f04c6a86d29a40c038e71d0255"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_s0_a1.json",
+      "bytes": 45737,
+      "sha256": "d2cfcf8aa64e068b4ab963b00a87ccce733c2efc8ee28b364643ebbd0c2ee1c5"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_s0_a2.json",
+      "bytes": 45747,
+      "sha256": "0e6b0574f0bf5b1422e62e408fa77d4d0845a1cd70ab7a6ae09c0adfb03ff507"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_s0_a3.json",
+      "bytes": 45821,
+      "sha256": "63e204745af559d60d4ea8a85dffbe5b205dcee80c815c8a4b82871e44d1254d"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_s0_a4.json",
+      "bytes": 45782,
+      "sha256": "1bc9f064fa826bb5db393fd7c2b65aecea680df7bff3563c675c4857d3d0684e"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_s0_a5.json",
+      "bytes": 45796,
+      "sha256": "3e580a477e637e3c9a1ebfd64a6e1ed3bfa5fc51e57db21321f442b724a33ab8"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_s0_a6.json",
+      "bytes": 40384,
+      "sha256": "6e8e67535f9d996c775bd6923df7fd0e91bc4314a77ea0a54f87e51f6b33eb21"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_s0_a7.json",
+      "bytes": 40393,
+      "sha256": "93fadd6a9d22e109fe44a6040cc0ff52cb73a6be876823ec33575d4154e4d4eb"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_s0_a8.json",
+      "bytes": 40272,
+      "sha256": "2c1c96ad68e93bbad13040abcbadeac5cae20828627492545e780b9a6888cb30"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_s1_a0.json",
+      "bytes": 40918,
+      "sha256": "12e73496dc2c4c3a9700079d9352c63364a410907a2875c23c0b58fc8815ff69"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_s1_a1.json",
+      "bytes": 40901,
+      "sha256": "31d161e933d2b9ce5efbeefddc09d700c3d172c66eeec56785c4ffa5a259ab1a"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_s1_a2.json",
+      "bytes": 40833,
+      "sha256": "5271ce2af37a3972376c49def42f10053755158995a2b1ebea73054dada8a8b1"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_s1_a3.json",
+      "bytes": 40914,
+      "sha256": "656ee81660a7983f817d9b0b353897599ab10b97394f46064f1397b96dd3b0ea"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_s1_a4.json",
+      "bytes": 40828,
+      "sha256": "1171e5de0795df2af94e28928a959a504611ef7d11700949a48734c77a472fb5"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_s1_a5.json",
+      "bytes": 40892,
+      "sha256": "00d64bf74f6fcfa094c24bbee572b0a498a40d6c6634a1ac8591865c216137cd"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_s1_a6.json",
+      "bytes": 35567,
+      "sha256": "449d74e64ff6ef10575a07a2a0d1628486fa5102b38e354186736eef90539d8f"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_s1_a7.json",
+      "bytes": 35529,
+      "sha256": "b2a27befee3cbed2548f1a9c529cede95c25d731256bc337d78ca677edd86bd2"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_s1_a8.json",
+      "bytes": 35392,
+      "sha256": "40e0662e5eece4cd2248831e5a4153a8b6c49d2a534f3968c0cf3fb10aec99de"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_states.pt",
+      "bytes": 233203,
+      "sha256": "74bf4460efe04b94db15e80e7409b7f5c09ba1f5bd3e5c85401866f7948b3842"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0000_states_receipt.json",
+      "bytes": 187,
+      "sha256": "194ced7938c4e3cc7064c3de51f5fb50908846c3d52a68ef193ee6f527e70c9a"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_collection.json",
+      "bytes": 36231,
+      "sha256": "fb0790913f4271997730a3beff6c5970595d5eaed55d68933e9366a21dcc97df"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_s0_a0.json",
+      "bytes": 45818,
+      "sha256": "c47545f8341f5db758881273c3a017394b2da6270269a5870dd4de2b09fe0cb0"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_s0_a1.json",
+      "bytes": 45714,
+      "sha256": "d92d8e137fe8c4209dc0bf1138a9a63233fa969b2100f1b75250f9cd39adad48"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_s0_a2.json",
+      "bytes": 45805,
+      "sha256": "c2b3d047150253195afea16249f99aff528881144d7ecd5fdc3c592303563b94"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_s0_a3.json",
+      "bytes": 45819,
+      "sha256": "1060c7c5e6057e21125ca36d3fa02ea6b1d4263c7ddd0b55966b75059e6dbde5"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_s0_a4.json",
+      "bytes": 45881,
+      "sha256": "2d57d638202645511f3859ebcc22630c37a50e357850ffd1b8d300b0c70f0c5d"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_s0_a5.json",
+      "bytes": 40669,
+      "sha256": "d87ade2e87c58571cfa01b4b045167116afd3277735b3927487fa7c4dcbc1925"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_s0_a6.json",
+      "bytes": 40423,
+      "sha256": "bac0889a341310f9a20d955d0e435ec84943365a2059db1b75efc44bd400ebcd"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_s0_a7.json",
+      "bytes": 40490,
+      "sha256": "69fa08ea23e7de8209ac03ab65834709b52c75f53c44fd296a9b14d6841dad3e"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_s0_a8.json",
+      "bytes": 40423,
+      "sha256": "a42c4e9ea10dfc0b0e45f1b0cdf83610d9c420fdeba4a102810b9792435afe60"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_s1_a0.json",
+      "bytes": 40919,
+      "sha256": "26294f83bead503446193ae04daa532902a939e7a8d0447204e2e7846804c791"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_s1_a1.json",
+      "bytes": 40908,
+      "sha256": "f1837ef3a02a96743a76b0d781594fcd496442d914b52506096e6672e6af39c9"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_s1_a2.json",
+      "bytes": 40899,
+      "sha256": "0550108e54423e43f6dae36f7e79092247853b090a3379df1fbb9e77616894b5"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_s1_a3.json",
+      "bytes": 35711,
+      "sha256": "c9bd0285054e533949f4228b4715d03cc0dec8610c7db36b93a67d2f6d088311"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_s1_a4.json",
+      "bytes": 35719,
+      "sha256": "2b66c504f5c54c76aac076dce2155a48556c839800e2be5adc7e594e6b914ae1"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_s1_a5.json",
+      "bytes": 35711,
+      "sha256": "970ab8fbee6a914debdf36b7c24c0c10548c922e988b17a57adfe0d0b925eb41"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_s1_a6.json",
+      "bytes": 35531,
+      "sha256": "243b712c1b685a1e2d4aee0080b649e140262f64f67db58c634bf6e86bd506fa"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_s1_a7.json",
+      "bytes": 35544,
+      "sha256": "d9e853cf8be85aa078a78a64ab2e3026782bce1a85d6433e05f58023702d80e8"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_s1_a8.json",
+      "bytes": 35550,
+      "sha256": "34d74359a470a9509d0666bb0fd75c4632693b70a9d02dd3296e5e80449cf2d2"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_states.pt",
+      "bytes": 240755,
+      "sha256": "fd4571bbf5f3c1e1f78df53ab1ac37e2f97ae184b1ef6e8e30fef91b6e8b0315"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0001_states_receipt.json",
+      "bytes": 187,
+      "sha256": "807139a05e80df6367d7abd0925eacdea187f666731f64f255d3195c39c57965"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_collection.json",
+      "bytes": 36221,
+      "sha256": "0e4bb4f7a9dc150ac7ea3464bf9827a1f9eb6428648e484c56615bcca2bda592"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_s0_a0.json",
+      "bytes": 40642,
+      "sha256": "f00ef08278d4b770de9adb6e8f4851f3d157ece2eaad331783b9e0c4610285fa"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_s0_a1.json",
+      "bytes": 40625,
+      "sha256": "27ad861fe9082e14db9aaeebfaaed8afe499e7f9e1536c2321d547b774be8911"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_s0_a2.json",
+      "bytes": 45810,
+      "sha256": "020af0f8b16b3b3762fcda7bd3068f1a95a2d3873e77a04a0e97f19cb60df41f"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_s0_a3.json",
+      "bytes": 40675,
+      "sha256": "fc97ccd4800fae52b3f6e25306a282c7701dbfdbab0f353cec3f397d57ce0a17"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_s0_a4.json",
+      "bytes": 40628,
+      "sha256": "df8cdf31b70331547c57c820f3230ebef1dd54529531c2850bb9dd8bcdc9bf33"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_s0_a5.json",
+      "bytes": 40615,
+      "sha256": "a853b9bd4be7e98792cc7cc3ca0e16171ce8e5ecd3455be518058d47baea2c32"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_s0_a6.json",
+      "bytes": 40468,
+      "sha256": "feaf8a101a2244f1df357fdb6caa228e1d42b800e2441666343a8139c3526f23"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_s0_a7.json",
+      "bytes": 40507,
+      "sha256": "13ba5c0bf77f9a06912fa4dce4a44b4b5d0cc3cd523f24c720c8512dc2a56658"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_s0_a8.json",
+      "bytes": 40418,
+      "sha256": "e966c005e7ce5f70cfc5a4c332451b5f821aad08b2970add935c0df9b5699ee9"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_s1_a0.json",
+      "bytes": 40924,
+      "sha256": "4e52c3bf2830411b9058f316247fc3ef17c6ccdc0a59a0a65fa525f053d486ac"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_s1_a1.json",
+      "bytes": 40889,
+      "sha256": "cc269d010c5b47fb7eacf2c58aa206571c760a2dae6919a0a9de871e45ca8286"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_s1_a2.json",
+      "bytes": 40927,
+      "sha256": "1cf6df99c6ee7411ea47d1a273bf0fbbd0873327377816de4e61a5df91c6270d"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_s1_a3.json",
+      "bytes": 40907,
+      "sha256": "5cf937da35d499993e2037fa4858a8e3fcd2de5e97238167530268265940ef45"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_s1_a4.json",
+      "bytes": 40918,
+      "sha256": "d26ab3db1a6625f77dbcf236d38fa5aed78e6d701599366bcc355ad81e7c8354"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_s1_a5.json",
+      "bytes": 35738,
+      "sha256": "29c42c502d9395720f9ab9999ff0a3d3295ea2829fb4fbdadbf4849b4777b7a9"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_s1_a6.json",
+      "bytes": 35528,
+      "sha256": "303b0d9b65870d3f081af5fda333258a20d3e983d96d16bbf62aaa82abff77be"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_s1_a7.json",
+      "bytes": 35564,
+      "sha256": "4b6850a458aa52f2fc3d32306f281db3ab5774f8dd78b6b2d49f3b772dd31a9b"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_s1_a8.json",
+      "bytes": 35530,
+      "sha256": "4d10e853e2e912a2899315ce9125a271c7ba21172bb2fc1cf8031fdd4c1301cc"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_states.pt",
+      "bytes": 240755,
+      "sha256": "7110b10bcff87dee6881c0cdcbcae9611a9d31bedea53826e4159e4170bd8738"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0002_states_receipt.json",
+      "bytes": 187,
+      "sha256": "b61989f8b3105ed363aff989fc83a09cbd8506fb4a4a1c98c25a2e470d9b1de1"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_collection.json",
+      "bytes": 36170,
+      "sha256": "b2cba152b1283927de8009da806606e89fc63436f82a931c4a22dc5840c9d46c"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_s0_a0.json",
+      "bytes": 45754,
+      "sha256": "93242a014376549282894e0e35fd2c77506740fb5283b1fefef39762af0ed8e0"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_s0_a1.json",
+      "bytes": 45712,
+      "sha256": "67db0b1c1894310bb1a948e4d821e2f9f07e151f0d550ac6c473cfcbf8549f5f"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_s0_a2.json",
+      "bytes": 45760,
+      "sha256": "925fdeb5d5fff16fe09b6d4faaf101aa301cfc3661baf79db933b8fa00e47b4c"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_s0_a3.json",
+      "bytes": 45725,
+      "sha256": "daf5ead451e53838d074f24ebf3f36d876f1c04daf6486347c1bf463074b1e82"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_s0_a4.json",
+      "bytes": 45799,
+      "sha256": "30a099d884a9cd65a23b501c8cab8ff63d6967dc6268239591075cef03ba4536"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_s0_a5.json",
+      "bytes": 45780,
+      "sha256": "4406e9db07d6191263280622d25c61ed386f613683dcf26e290935cb798a0468"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_s0_a6.json",
+      "bytes": 40271,
+      "sha256": "2381d354456927a53d77c306b2952d3dadb05aa1d0ce058573c99aaa293ac414"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_s0_a7.json",
+      "bytes": 40399,
+      "sha256": "71087d34d72a0ea58ce9217ffae81cff841454e0fff6d1e6843790dd21987548"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_s0_a8.json",
+      "bytes": 40336,
+      "sha256": "95d6fae5837ee5d56d75ad3e453c978891129c11470c66a46253972f00eea121"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_s1_a0.json",
+      "bytes": 40872,
+      "sha256": "1a52194e0852242ceff0484f6127ceb321e8f59e1d1210aac0ccb4b56cf35640"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_s1_a1.json",
+      "bytes": 40837,
+      "sha256": "9803262772a3959a25b3de64258bf50f5a37e41a4416a22a3f7975177445f8e6"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_s1_a2.json",
+      "bytes": 40831,
+      "sha256": "94cbb7aadfc4355e8304642f14b15096799780213d132d4e857440c87214b60e"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_s1_a3.json",
+      "bytes": 40915,
+      "sha256": "de92d760397b72e981e6f3434f8c8b1bb3dfee684fb1737a797c91772bfb5d87"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_s1_a4.json",
+      "bytes": 40893,
+      "sha256": "0da5ad4f789c0fc4fea7ffd51244d6b8831a332b28b9618f9d240cdb6b0ee1bb"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_s1_a5.json",
+      "bytes": 40879,
+      "sha256": "db403052fc9de6de3006393820414643853f6152973113f427ab3fcb7539345f"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_s1_a6.json",
+      "bytes": 30373,
+      "sha256": "a542e7efa7e6f5ad276a0ce634234f1435b0db2a845c2655bcb6761fcb4fa820"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_s1_a7.json",
+      "bytes": 30375,
+      "sha256": "c9dc3cc775289a744ace058e1d2cbee46de2b1c4dc54dd21b2fa732a99217267"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_s1_a8.json",
+      "bytes": 35514,
+      "sha256": "8452bd2900e9207ec4d135e0673dc721c3e17d55648675da12dc8feca6d0caf3"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_states.pt",
+      "bytes": 250739,
+      "sha256": "00ad7b5782aacdfb4691605c8cdf5f35aeadbb8ab70ef80c6b2ff87bf734dfb2"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0003_states_receipt.json",
+      "bytes": 187,
+      "sha256": "8a7df0bbb8b289170b99d0191624626e7892e4828e2c65924f6d3ef760936f10"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_collection.json",
+      "bytes": 36238,
+      "sha256": "36e1c36f9dfa90405b96998c1ebfc87ab340840075d4d3fb872907a850fe947c"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_s0_a0.json",
+      "bytes": 45832,
+      "sha256": "698b8059e82d418ce08f23e1e084028f367d03c6284162c62c546aad1f7197e7"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_s0_a1.json",
+      "bytes": 40564,
+      "sha256": "bdc86fc0435a278a16788f89e9cbb567f1e933edaf297bd3fbadd63d88315cb1"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_s0_a2.json",
+      "bytes": 45790,
+      "sha256": "c4259074089735f22c88f93411019c2de2694b8675c35b715ae9a787568bcf85"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_s0_a3.json",
+      "bytes": 40685,
+      "sha256": "586329bb5a7bdf456f4c6e7ea2495c1012f531e72bf36f05d6c05b51257e1b9a"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_s0_a4.json",
+      "bytes": 40660,
+      "sha256": "3b2d2210af2e5d884d6a3e8be86947b3b8d968b1c4ca76704aab99ce9a6a62dd"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_s0_a5.json",
+      "bytes": 40708,
+      "sha256": "f43fda24364f502495549d6a32649b3e9d06ee12e77e5d29dd2d63c22eaa1b36"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_s0_a6.json",
+      "bytes": 40496,
+      "sha256": "70d74a58df683f04246c46672f1777c4c406778ce64462e856d5e06805e7a2b2"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_s0_a7.json",
+      "bytes": 40496,
+      "sha256": "b9d742c25ed1ffdd399870a90b2edd5fa93edf338d4e33cfd99fd49286ebe4a6"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_s0_a8.json",
+      "bytes": 40442,
+      "sha256": "b7d6560bc48018727dde79ecab8633f012756e95c3a7c98c2e32064b9edde00c"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_s1_a0.json",
+      "bytes": 35744,
+      "sha256": "0adb1e73290aa0e1c362f0f04ae90ea9cee7fa4c5a57e0027faf9cb77f2348e4"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_s1_a1.json",
+      "bytes": 35756,
+      "sha256": "edfff6785606fb6ae1059cc88a89da489f184f4caebc89bdad41a6340bd399f6"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_s1_a2.json",
+      "bytes": 35723,
+      "sha256": "5bb747a75a2199e8a6b2497b1bf5533ba37e3fe51a7b359e2fdad2331ec7cb04"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_s1_a3.json",
+      "bytes": 35790,
+      "sha256": "9541425fce0fb188b7f2b5accbab68cd8ee6b445a2a62029c72b8fc6f2e44e46"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_s1_a4.json",
+      "bytes": 35757,
+      "sha256": "12a313c5e8cf76a954948cc05e1929c4909827de8696aa3906814a44f2c2d0f3"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_s1_a5.json",
+      "bytes": 35753,
+      "sha256": "64b8007d7ca6320ae97752f509187574457e790b224e0eac79276d1bf05e9138"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_s1_a6.json",
+      "bytes": 35584,
+      "sha256": "d59a0ed6e01916c75dee6366a9bbc68cc20edc9708b0c12a30ce247b29481582"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_s1_a7.json",
+      "bytes": 35534,
+      "sha256": "02e3d76374c0d36a68351298f6475244f6f84804313129445a769c2f3645495e"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_s1_a8.json",
+      "bytes": 35531,
+      "sha256": "e2bee36393750ba02e9283e031f17d877f084a69858841b1312bdcc445698a81"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_states.pt",
+      "bytes": 183283,
+      "sha256": "e8c521ff0fda15a17b8347711d39e783eeb5e6f10b803a4e9c90d5639e57b3cc"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0004_states_receipt.json",
+      "bytes": 187,
+      "sha256": "02e5656638deb3713fc4c50da8159decaa2af8859783e33e61d8ebb1db8d7826"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_collection.json",
+      "bytes": 41096,
+      "sha256": "2a25525f1c72bc6c002d34eedd833890fe0e4a3a3f46640aea75c7c54340208e"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_s0_a0.json",
+      "bytes": 45718,
+      "sha256": "8115e2d5c954c5d51ea61d74466d76e2f1845500e338cbd328da0a3a5be0bc3c"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_s0_a1.json",
+      "bytes": 45737,
+      "sha256": "decbd3a6000598d986d15f46d470c00cf243b3c0387ca8f56539404b0b0598ca"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_s0_a2.json",
+      "bytes": 45774,
+      "sha256": "05e017317a446fb69f8d762184a97c7957c74ebc2cc3eeb7945a043a4185ad9e"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_s0_a3.json",
+      "bytes": 45827,
+      "sha256": "95335c53e74cc2f8abe0886ddf4387bbdce634f6491d8c46bd9b1318e44f0b11"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_s0_a4.json",
+      "bytes": 45816,
+      "sha256": "8cb4a55ee0a7a7ceec9a689cd530d2fa38becbcf5f4b4fcb5259cc2ada87218e"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_s0_a5.json",
+      "bytes": 40619,
+      "sha256": "6d71037c841b46ee2e1009dbc52f5d77e736b939d0c7a2e8a3f6138ae5b778da"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_s0_a6.json",
+      "bytes": 40464,
+      "sha256": "f85bfd14084e91f5758fe3ee93bde0b9ead303f285e35a8d5aa05cdb3e41b119"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_s0_a7.json",
+      "bytes": 40423,
+      "sha256": "b32961e67a7a549e4ec8c40038381d3344f60f6f4c422aef6793560bea1c47c1"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_s0_a8.json",
+      "bytes": 45650,
+      "sha256": "1b8e16dbadfec3d680f13182c5e7a1887d816ac07100c6950cef525b07f3ced2"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_s1_a0.json",
+      "bytes": 40934,
+      "sha256": "9236dddbd9e47667ad2ed86a2301aa32b5ae715b04379ad528810db0608c99b6"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_s1_a1.json",
+      "bytes": 40911,
+      "sha256": "84e867f81098367c4e2911d5731674c54eaada8ebbe305298806d46583cfbd10"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_s1_a2.json",
+      "bytes": 40899,
+      "sha256": "014ec2d785e8d6cf8911ef33b97d7edd9cdff03697eb933c1a690f14e8e0bbf0"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_s1_a3.json",
+      "bytes": 40956,
+      "sha256": "07738d1a4539d12c1355cd4024f384b40675a24ae16c2851cd05a905b5294256"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_s1_a4.json",
+      "bytes": 40931,
+      "sha256": "538ecebd68a724226ffd76de3207baf07f497b31c8b51827da062045801de0c3"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_s1_a5.json",
+      "bytes": 40927,
+      "sha256": "be2a11cc09333c3bbf364cb8643416ab0e89248fffe9bd49d4520bdd39fb27ca"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_s1_a6.json",
+      "bytes": 35577,
+      "sha256": "e074432abbe69de4ec44b09cc6fedeeeea9c0e3092f178f9582ec6bd39552cf3"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_s1_a7.json",
+      "bytes": 35523,
+      "sha256": "5f4e73c551e5ee7e83c4b836c1131b85f98cbf030d580214b915c46fb9279e5c"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_s1_a8.json",
+      "bytes": 40758,
+      "sha256": "270a79e3a3263b85051633e88e5ea87e56b1b8e6cf695e95718f9ce3b7c073e1"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_states.pt",
+      "bytes": 238195,
+      "sha256": "e61be04abc43932ddc1e724581c4828c1bf164f0ab50e0c06901aaffe88c5f8d"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/rollouts_0/train_d4_0005_states_receipt.json",
+      "bytes": 187,
+      "sha256": "61ec44ddae2e0015eedffb0b7b5df24368f9b2f2726815be6a8df576200ed206"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/selection_0.json",
+      "bytes": 919,
+      "sha256": "0c5329a4714624c59ee72815aa91578650540845239008449f36265574f954db"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/adaptive_tt_dgmres/__init__.py",
+      "bytes": 248,
+      "sha256": "505a58d14d4c5d337511de01358c212668d619ad2f01ead3cc6b2e2c0eaffe91"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/adaptive_tt_dgmres/__main__.py",
+      "bytes": 37,
+      "sha256": "f91c4ca53a88e177f0e28034eb6c73d1dfb73729b3605f9883b193e223e3732d"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/adaptive_tt_dgmres/backend/__init__.py",
+      "bytes": 65,
+      "sha256": "e640a7c50cd2715bbfb8fdb616ba2b93b833c90d7e2667adbf4fb50b96742dc2"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/adaptive_tt_dgmres/backend/paper_tt_dgmres.py",
+      "bytes": 78636,
+      "sha256": "5d7baa52cfed47c41a6964507542df27eb0cdd7894971e72b0d05ac1bd10ae8e"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/adaptive_tt_dgmres/backend/paper_tt_gmres.py",
+      "bytes": 38629,
+      "sha256": "78e8120aef2144ba1741fa9c9129cef9a0c2e2cf465b9bf3f40428b77ee9ed93"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/adaptive_tt_dgmres/backend/tt_dgmres_neumann_poisson_example.py",
+      "bytes": 34871,
+      "sha256": "a0acc83a79dc1622bb97e14b31d9893b7807742d4af2e220143ebe417106f81b"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/adaptive_tt_dgmres/backend/tt_dgmres_seventh_fast_restart_sweep.py",
+      "bytes": 40331,
+      "sha256": "45569114ceadadf364afe3eb7ddc527f2835348746569f9a62350a5f5883026a"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/adaptive_tt_dgmres/controller.py",
+      "bytes": 10706,
+      "sha256": "4553df90405f360d90797a61fa2187f7f5339fa7454005711306422a3002b310"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/adaptive_tt_dgmres/experiment.py",
+      "bytes": 23283,
+      "sha256": "a31669f08fd0c41601df6192352fd8b4cc6feb8d771741e6056154417ea15fb8"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/adaptive_tt_dgmres/features.py",
+      "bytes": 5689,
+      "sha256": "068a84d1c569b8c5efdcbd35bdb5371c92d1c5da1970cfac9469a22451bf5b45"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/adaptive_tt_dgmres/model.py",
+      "bytes": 10864,
+      "sha256": "f23d11373a66450e4e86fd96d32cf4bc65e5160f486333590cab1d88149ba97f"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/adaptive_tt_dgmres/problems.py",
+      "bytes": 4507,
+      "sha256": "f669e12c1579ab99192d2cba6cb3d41073f502e52262a02e9d11f44b75d533c2"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/adaptive_tt_dgmres/rounding.py",
+      "bytes": 11665,
+      "sha256": "da96bff7914ecce48c05ad74ccde2bc8e09243ebfbbde3e273608bee2d0f27fc"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/adaptive_tt_dgmres/solver.py",
+      "bytes": 31093,
+      "sha256": "f3c35780b45499b3396fc9744c7bb1bc63525330157a8bd7076306a504973e30"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_neumann/__init__.py",
+      "bytes": 82,
+      "sha256": "3cc3bd98c172941203add044a311b8b7d9048f4ea5b4243183ad337346f60d46"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_neumann/__main__.py",
+      "bytes": 37,
+      "sha256": "f91c4ca53a88e177f0e28034eb6c73d1dfb73729b3605f9883b193e223e3732d"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_neumann/experiment.py",
+      "bytes": 52923,
+      "sha256": "a451788c29ee192d8b384d7a8a5edeb56916f50287395a0b1fdd430717cebc00"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_neumann/problems.py",
+      "bytes": 10575,
+      "sha256": "a3b18b68392bcebfa030711cac23c246cffff887ff7430817c5755ba93f93648"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v1/__init__.py",
+      "bytes": 97,
+      "sha256": "a462efdc0aa6e29b043e89b5f932e68455a5fae75537292c10ba9ee20241aa05"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v1/__main__.py",
+      "bytes": 37,
+      "sha256": "f91c4ca53a88e177f0e28034eb6c73d1dfb73729b3605f9883b193e223e3732d"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v1/experiment.py",
+      "bytes": 32464,
+      "sha256": "fea53f6fbe696f54cf6cefdfb51431aa7e0e6194edea45307f5471402ce976d9"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v1/learning.py",
+      "bytes": 14821,
+      "sha256": "32f36e69321ba71e4941a0fd625f6878e814701215ae73f37c27e7e8e64b2741"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v1/predict.py",
+      "bytes": 1948,
+      "sha256": "c98225eaebc4c06fca16eeebaf31c701aadfdcd2e8f8cba552c7690770e13de0"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v1/problems.py",
+      "bytes": 14740,
+      "sha256": "b504a86781adc89000ce58a0e6ca6279b1d17f321862dc0da9289953e19a9e38"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v1/runner.py",
+      "bytes": 17229,
+      "sha256": "101579b004b101e8515be45b25127143ff2df8baedda340c63bd3546b5fe609b"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v2/__init__.py",
+      "bytes": 84,
+      "sha256": "0cb1f9b685ddcc9271b06432f2a8fa021a674012ab7ff2b0ca7a2ac7abcfcdf2"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v2/__main__.py",
+      "bytes": 37,
+      "sha256": "f91c4ca53a88e177f0e28034eb6c73d1dfb73729b3605f9883b193e223e3732d"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v2/experiment.py",
+      "bytes": 17726,
+      "sha256": "383e0058d10b045dcc477cc353114da753d6484aa764c3d505444bcf762fd6c8"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v2/predict.py",
+      "bytes": 1990,
+      "sha256": "d8996be6746b0ca198e63c9666efc3899bec0d9a956c6eabfdd0e9a06d009f84"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v2/problems.py",
+      "bytes": 13898,
+      "sha256": "fa18ecebf55ea812523830756f45694735e83856813ca7b3760ba27bde7878b4"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v2/rounding.py",
+      "bytes": 21538,
+      "sha256": "b715e7e5e8bceabae0e18f7092d877e9d251266c61d2a87a8adf9927bbe5b8b8"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v2/runner.py",
+      "bytes": 21163,
+      "sha256": "7f7e8d7ced89f076c509011d21e5e46fb468de4310c90ae16a6ad275aa9e1a3f"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v2/solver.py",
+      "bytes": 47694,
+      "sha256": "1b80e7c47a3ad7a3cd60ac556fab5962910fb07ac51c75c206646802eb1bfe0f"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v3/__init__.py",
+      "bytes": 75,
+      "sha256": "69493714ea5358ae058dd5c8e7c46f7ba7cca68d2f5cc044846f84d74af260ef"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v3/__main__.py",
+      "bytes": 68,
+      "sha256": "490c2bc711cd56e9a618475fb9ba8ee2ddeaca4fdbfa431d4ab34b928090c139"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v3/experiment.py",
+      "bytes": 26130,
+      "sha256": "bc1601bb58e0ee37d5ac2ea1680aa1ee74b563ca67a9b1a6eedeb2fb18d5d9e4"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v3/learning.py",
+      "bytes": 30613,
+      "sha256": "25df9be4481e7a6baf172e8e58b6a331fb1b07beb7589914b55390ec1e4f140b"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/source_snapshot/rl_tt_dgmres_v3/runner.py",
+      "bytes": 18761,
+      "sha256": "ad4edbf750f46e308623e7c9f670238d214120242054fa4e017283b90a003f45"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/splits.json",
+      "bytes": 3899,
+      "sha256": "cc92d2d4be711c1b702cf2951e8a070550606703595bdf50bbc57f8351f74d7a"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/validation_0.json",
+      "bytes": 24151,
+      "sha256": "761f14a8fdf8e4f765c03c0ccebccd524157faca738daa2d33fe5a7566bf355a"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/validation_0/validation_d4_0000_g0.json",
+      "bytes": 90101,
+      "sha256": "464f367fda495e8176d432f533caa5ef5f6245a94aecbce3a5a65cbf0e4e66f8"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/validation_0/validation_d4_0000_g1.json",
+      "bytes": 90090,
+      "sha256": "7d3d26fa17ab3afa445eb90b5b2cef92fe4e46c12410a2ec44cd6570f6a66c0f"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/validation_0/validation_d4_0000_g2.json",
+      "bytes": 90082,
+      "sha256": "caeda71985079f8fab95a306a691f6f0ac7c2dbed25ebf0291b8c4b70eca87dd"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/validation_0/validation_d4_0001_g0.json",
+      "bytes": 36449,
+      "sha256": "bf8e08ff2458d06dbc6f91186b08efa5d13e386661aa24577d457f5a48fa2884"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/validation_0/validation_d4_0001_g1.json",
+      "bytes": 36466,
+      "sha256": "f76350aac4892742207f7f85d9da9761fa9ed8139466f9d4a2baf1b300942c67"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/validation_0/validation_d4_0001_g2.json",
+      "bytes": 41005,
+      "sha256": "837734977cf4cee0ba052ab81e3ed058402d54763042ce3cfea8c32d90984e34"
+    },
+    {
+      "path": "results/rl_tt_dgmres_neumann_d4_20261001/validation_protocol_0.json",
+      "bytes": 7509,
+      "sha256": "af8973ce7427471fea50a0bf3c5b6e24792a9fc913be9aabf2b6683b4ed4ad13"
+    },
+    {
+      "path": "rl_tt_dgmres_neumann/README.md",
+      "bytes": 5855,
+      "sha256": "b329ddf56159a2bdf62ceb950d72940bce2eefd7f971bff5bb6d45aa5860ff60"
+    },
+    {
+      "path": "rl_tt_dgmres_neumann/__init__.py",
+      "bytes": 82,
+      "sha256": "3cc3bd98c172941203add044a311b8b7d9048f4ea5b4243183ad337346f60d46"
+    },
+    {
+      "path": "rl_tt_dgmres_neumann/__main__.py",
+      "bytes": 37,
+      "sha256": "f91c4ca53a88e177f0e28034eb6c73d1dfb73729b3605f9883b193e223e3732d"
+    },
+    {
+      "path": "rl_tt_dgmres_neumann/experiment.py",
+      "bytes": 52923,
+      "sha256": "a451788c29ee192d8b384d7a8a5edeb56916f50287395a0b1fdd430717cebc00"
+    },
+    {
+      "path": "rl_tt_dgmres_neumann/problems.py",
+      "bytes": 10575,
+      "sha256": "a3b18b68392bcebfa030711cac23c246cffff887ff7430817c5755ba93f93648"
+    },
+    {
+      "path": "rl_tt_dgmres_neumann/tests/test_experiment.py",
+      "bytes": 15839,
+      "sha256": "75d5242bbe6e6f8dd18d084bd71000b9eb519245542bdbfda9ff772bf3c32592"
+    },
+    {
+      "path": "rl_tt_dgmres_neumann/tests/test_problems.py",
+      "bytes": 9691,
+      "sha256": "3d89b68a32eeee88464856b1b641e5e64207cbc320d3511011641717938e34b4"
+    },
+    {
+      "path": "rl_tt_dgmres_v1/README.md",
+      "bytes": 6407,
+      "sha256": "abcc9dd09c126d19ab9390e7613bb35a28d737f4a01b43adc5154d07c0d81d5e"
+    },
+    {
+      "path": "rl_tt_dgmres_v1/VERIFICATION.md",
+      "bytes": 4235,
+      "sha256": "1f3f2ce3cf731f35f437e8d7ccb6e77f30f3d2e6f76e3f78b11ce71c271e1db3"
+    },
+    {
+      "path": "rl_tt_dgmres_v1/__init__.py",
+      "bytes": 97,
+      "sha256": "a462efdc0aa6e29b043e89b5f932e68455a5fae75537292c10ba9ee20241aa05"
+    },
+    {
+      "path": "rl_tt_dgmres_v1/__main__.py",
+      "bytes": 37,
+      "sha256": "f91c4ca53a88e177f0e28034eb6c73d1dfb73729b3605f9883b193e223e3732d"
+    },
+    {
+      "path": "rl_tt_dgmres_v1/experiment.py",
+      "bytes": 32464,
+      "sha256": "fea53f6fbe696f54cf6cefdfb51431aa7e0e6194edea45307f5471402ce976d9"
+    },
+    {
+      "path": "rl_tt_dgmres_v1/learning.py",
+      "bytes": 14821,
+      "sha256": "32f36e69321ba71e4941a0fd625f6878e814701215ae73f37c27e7e8e64b2741"
+    },
+    {
+      "path": "rl_tt_dgmres_v1/predict.py",
+      "bytes": 1948,
+      "sha256": "c98225eaebc4c06fca16eeebaf31c701aadfdcd2e8f8cba552c7690770e13de0"
+    },
+    {
+      "path": "rl_tt_dgmres_v1/problems.py",
+      "bytes": 14740,
+      "sha256": "b504a86781adc89000ce58a0e6ca6279b1d17f321862dc0da9289953e19a9e38"
+    },
+    {
+      "path": "rl_tt_dgmres_v1/runner.py",
+      "bytes": 17229,
+      "sha256": "101579b004b101e8515be45b25127143ff2df8baedda340c63bd3546b5fe609b"
+    },
+    {
+      "path": "rl_tt_dgmres_v1/tests/test_experiment.py",
+      "bytes": 9991,
+      "sha256": "aba762c6008ac63f82616b667a78798c2026d597f128f69fb7c1a33f21894053"
+    },
+    {
+      "path": "rl_tt_dgmres_v1/tests/test_learning.py",
+      "bytes": 6602,
+      "sha256": "6f6bc2db65d284e1626ed788a9652ac44e30748d4764dd81fd0c922d44ac27e4"
+    },
+    {
+      "path": "rl_tt_dgmres_v1/tests/test_problems.py",
+      "bytes": 8609,
+      "sha256": "0d07ce0d7b2741de439ba2e62b02978523711231c790f2939ed06ca1c16cd5e8"
+    },
+    {
+      "path": "rl_tt_dgmres_v1/tests/test_runner.py",
+      "bytes": 8078,
+      "sha256": "46d0016f1908b90c6a923811ec6e80e8d9fe6bfaeec91ac09436a9338af3df3c"
+    },
+    {
+      "path": "rl_tt_dgmres_v2/README.md",
+      "bytes": 10540,
+      "sha256": "e970211dc79f7c918d655a774ad82fab0b20ac8bf57377c344c25776d84bf6fa"
+    },
+    {
+      "path": "rl_tt_dgmres_v2/__init__.py",
+      "bytes": 84,
+      "sha256": "0cb1f9b685ddcc9271b06432f2a8fa021a674012ab7ff2b0ca7a2ac7abcfcdf2"
+    },
+    {
+      "path": "rl_tt_dgmres_v2/__main__.py",
+      "bytes": 37,
+      "sha256": "f91c4ca53a88e177f0e28034eb6c73d1dfb73729b3605f9883b193e223e3732d"
+    },
+    {
+      "path": "rl_tt_dgmres_v2/experiment.py",
+      "bytes": 17726,
+      "sha256": "383e0058d10b045dcc477cc353114da753d6484aa764c3d505444bcf762fd6c8"
+    },
+    {
+      "path": "rl_tt_dgmres_v2/predict.py",
+      "bytes": 1990,
+      "sha256": "d8996be6746b0ca198e63c9666efc3899bec0d9a956c6eabfdd0e9a06d009f84"
+    },
+    {
+      "path": "rl_tt_dgmres_v2/problems.py",
+      "bytes": 13898,
+      "sha256": "fa18ecebf55ea812523830756f45694735e83856813ca7b3760ba27bde7878b4"
+    },
+    {
+      "path": "rl_tt_dgmres_v2/requirements.txt",
+      "bytes": 87,
+      "sha256": "8f56ab89645178938b24afbc14455ed1a456d09a3b5de2acfb7f5101ff7cfb57"
+    },
+    {
+      "path": "rl_tt_dgmres_v2/rounding.py",
+      "bytes": 21538,
+      "sha256": "b715e7e5e8bceabae0e18f7092d877e9d251266c61d2a87a8adf9927bbe5b8b8"
+    },
+    {
+      "path": "rl_tt_dgmres_v2/runner.py",
+      "bytes": 21163,
+      "sha256": "7f7e8d7ced89f076c509011d21e5e46fb468de4310c90ae16a6ad275aa9e1a3f"
+    },
+    {
+      "path": "rl_tt_dgmres_v2/solver.py",
+      "bytes": 47694,
+      "sha256": "1b80e7c47a3ad7a3cd60ac556fab5962910fb07ac51c75c206646802eb1bfe0f"
+    },
+    {
+      "path": "rl_tt_dgmres_v2/tests/test_experiment.py",
+      "bytes": 7501,
+      "sha256": "e67f729b0a626847704cb73ebe288137359e3a274abb9669c273ab42e6f4e800"
+    },
+    {
+      "path": "rl_tt_dgmres_v2/tests/test_numerical_audit.py",
+      "bytes": 5024,
+      "sha256": "e1540b4f8a31e02b1b5b657714b4e2e23cb2c59e33a437673a349c32a1c8f0a6"
+    },
+    {
+      "path": "rl_tt_dgmres_v2/tests/test_problems.py",
+      "bytes": 9406,
+      "sha256": "83b23d0459eae4b81759d4f796746081a7690ee4468082e84e3d300eb0045f86"
+    },
+    {
+      "path": "rl_tt_dgmres_v2/tests/test_rounding.py",
+      "bytes": 12878,
+      "sha256": "269bda6eb574f7913c32a41ac74b87b42695adb2e007c59fe904515fc3315de3"
+    },
+    {
+      "path": "rl_tt_dgmres_v2/tests/test_runner_audit.py",
+      "bytes": 12657,
+      "sha256": "0e60ba60fe04dbb36f50d4cb37c04f537a4cf8f854f3d530ebbd7bc9f70c852f"
+    },
+    {
+      "path": "rl_tt_dgmres_v2/tests/test_solver.py",
+      "bytes": 23772,
+      "sha256": "f303c7d91f35bc79322758d824d1f5e5d8d970d80d8a32430aedc63735928f2c"
+    },
+    {
+      "path": "rl_tt_dgmres_v3/README.md",
+      "bytes": 2387,
+      "sha256": "3d9f6b1623a10ce2db7aaf446ce76924360642f37841c9e041400d9642820d77"
+    },
+    {
+      "path": "rl_tt_dgmres_v3/__init__.py",
+      "bytes": 75,
+      "sha256": "69493714ea5358ae058dd5c8e7c46f7ba7cca68d2f5cc044846f84d74af260ef"
+    },
+    {
+      "path": "rl_tt_dgmres_v3/__main__.py",
+      "bytes": 68,
+      "sha256": "490c2bc711cd56e9a618475fb9ba8ee2ddeaca4fdbfa431d4ab34b928090c139"
+    },
+    {
+      "path": "rl_tt_dgmres_v3/experiment.py",
+      "bytes": 26130,
+      "sha256": "bc1601bb58e0ee37d5ac2ea1680aa1ee74b563ca67a9b1a6eedeb2fb18d5d9e4"
+    },
+    {
+      "path": "rl_tt_dgmres_v3/learning.py",
+      "bytes": 30613,
+      "sha256": "25df9be4481e7a6baf172e8e58b6a331fb1b07beb7589914b55390ec1e4f140b"
+    },
+    {
+      "path": "rl_tt_dgmres_v3/runner.py",
+      "bytes": 18761,
+      "sha256": "ad4edbf750f46e308623e7c9f670238d214120242054fa4e017283b90a003f45"
+    },
+    {
+      "path": "rl_tt_dgmres_v3/tests/test_experiment.py",
+      "bytes": 1122,
+      "sha256": "6d1d25d26fb73cf938119cdc743fc1d282f20ed6b1fee515c1d4d34a86972d5c"
+    },
+    {
+      "path": "rl_tt_dgmres_v3/tests/test_learning.py",
+      "bytes": 9782,
+      "sha256": "8aac2f7c0576d4e5114eefa74ae56744bf0cbcd3c5292c173efd1e0922f27cae"
+    },
+    {
+      "path": "rl_tt_dgmres_v3/tests/test_runner.py",
+      "bytes": 14481,
+      "sha256": "ac464471738416cd03f5c356d27242d65575dc3af0595c3d3e88f6973e18c8a2"
+    },
+    {
+      "path": "run_trained_neumann.py",
+      "bytes": 6778,
+      "sha256": "247fcc6819b9e723ac81b7aa773958a2bbc1248b5a1f0023b090b1498cf5f28b"
+    },
+    {
+      "path": "test_run_trained_neumann.py",
+      "bytes": 1941,
+      "sha256": "2e6c8dd0733548cc006824a08cb3c316cfd2f5e64b890696bfbe31d96a8ce8aa"
+    }
+  ],
+  "scope": "All primary and explicitly requested development files, including failures, full raw logs, models, state checkpoints and source snapshots; no selection by observed success or speedup.",
+  "runnable_packages": [
+    "rl_tt_dgmres_neumann",
+    "rl_tt_dgmres_v1",
+    "rl_tt_dgmres_v2",
+    "rl_tt_dgmres_v3",
+    "adaptive_tt_dgmres"
+  ],
+  "required_helpers": [
+    "audit_rl_tt_dgmres_neumann.py",
+    "run_trained_neumann.py",
+    "pilot_neumann_training.py",
+    "package_rl_tt_dgmres_neumann.py"
+  ],
+  "dependency_file": "rl_tt_dgmres_v2/requirements.txt",
+  "inventory_self_exclusion": "DELIVERY_MANIFEST.json cannot contain its own SHA; its bytes/SHA are verified separately and printed in the external receipt.",
+  "limitations": [
+    "Hash-linked evidence consistency, not a cryptographic external timestamp or proof of historical execution.",
+    "Models and tensor checkpoints are hash-checked without unpickling or executing them.",
+    "Saved independent float64 acceptance is checked; residual tensors are not recomputed.",
+    "Training and test share operators; only new RHS instances are held out.",
+    "Known paper seed cases are descriptive showcases, excluded from held-out claims.",
+    "An observed fixed-versus-RL gain alone does not establish cycle-by-cycle adaptation benefit; rl_static is a separate comparator.",
+    "Gate disagreement and failure penalties are not convergence or universal acceleration proofs."
+  ],
+  "usage": "Extract preserving paths and run helpers from the extracted root on the recording platform (Windows); frozen source/receipt path spelling is platform-specific. Python numerical dependencies are listed, not bundled. Existing batch inference does not require the external paper Desktop path; fresh prepare currently does."
+}
